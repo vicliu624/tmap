@@ -3,6 +3,13 @@ namespace tmap
 {
 namespace
 {
+Result writeLeg(IntegerPreparedRouteCursor& c, size_t index, const IntegerRouteLeg& leg)
+{
+    if (index >= c.capacity) return Result::BudgetExceeded;
+    if (c.sink_output) return c.sink->writeLeg(static_cast<uint32_t>(index), leg);
+    c.legs[index] = leg;
+    return Result::Ok;
+}
 Result finish(IntegerPreparedRouteCursor& c, Result result)
 {
     c.terminal = result;
@@ -30,6 +37,7 @@ Result beginIntegerPreparedRoute(GraphReader& graph, const IntegerEndpointCandid
     c.options = options;
     c.workspace = workspace;
     c.legs = legs;
+    c.sink_output = false;
     c.capacity = capacity;
     c.generation = graph.package().generation();
     c.pair = c.stage = 0;
@@ -37,6 +45,20 @@ Result beginIntegerPreparedRoute(GraphReader& graph, const IntegerEndpointCandid
     c.expansions = 0;
     c.terminal = Result::More;
     return Result::Ok;
+}
+Result beginIntegerPreparedRouteToSink(GraphReader& graph, const IntegerEndpointCandidates& starts,
+                                       const IntegerEndpointCandidates& ends, IntegerRouteOptions options,
+                                       IntegerRouteWorkspace workspace, IntegerRouteLegSink& sink, size_t capacity,
+                                       IntegerPreparedRouteCursor& c)
+{
+    if (capacity > UINT32_MAX) return Result::Invalid;
+    const auto r = beginIntegerPreparedRoute(graph, starts, ends, options, workspace, &c.direct.best.leg, capacity, c);
+    if (r == Result::Ok)
+    {
+        c.sink = &sink;
+        c.sink_output = true;
+    }
+    return r;
 }
 Result integerPreparedRouteStep(GraphReader& graph, IntegerPreparedRouteCursor& c, size_t budget)
 {
@@ -60,7 +82,9 @@ Result integerPreparedRouteStep(GraphReader& graph, IntegerPreparedRouteCursor& 
             result = integerDirectRouteStep(graph, c.direct, 1, direct);
             if (result == Result::Ok)
             {
-                c.legs[0] = direct.leg;
+                result = writeLeg(c, 0, direct.leg);
+                if (result == Result::Busy || result == Result::More) return result;
+                if (result != Result::Ok) return finish(c, result);
                 c.count = 1;
                 c.cost_units = direct.cost_units;
                 c.found = true;
@@ -140,14 +164,22 @@ Result integerPreparedRouteStep(GraphReader& graph, IntegerPreparedRouteCursor& 
                     c.write_index = c.walk_count + size_t(start.partial);
                     c.walk = c.search.goal;
                     c.stage = 5;
-                    if (start.partial) c.legs[0] = start.leg;
-                    if (end.partial) c.legs[c.count - 1] = end.leg;
                 }
                 else
                 {
                     if (++c.walk_count > c.search.labels_used) return finish(c, Result::Invalid);
                     c.walk = label.previous;
                 }
+            }
+            else if (c.stage == 5)
+            {
+                result = start.partial ? writeLeg(c, 0, start.leg) : Result::Ok;
+                if (result == Result::Ok) c.stage = 6;
+            }
+            else if (c.stage == 6)
+            {
+                result = end.partial ? writeLeg(c, c.count - 1, end.leg) : Result::Ok;
+                if (result == Result::Ok) c.stage = 7;
             }
             else
             {
@@ -164,11 +196,15 @@ Result integerPreparedRouteStep(GraphReader& graph, IntegerPreparedRouteCursor& 
                 else
                 {
                     if (!c.write_index || label.key == UINT32_MAX || !label.key) return finish(c, Result::Invalid);
-                    auto& leg = c.legs[--c.write_index];
+                    IntegerRouteLeg leg{};
                     if (!c.search.total_edges) return finish(c, Result::Invalid);
                     leg.edge = (label.key - 1) % c.search.total_edges;
                     leg.first_cm = 0;
                     leg.last_cm = UINT32_MAX;
+                    result = writeLeg(c, c.write_index - 1, leg);
+                    if (result == Result::Busy || result == Result::More) return result;
+                    if (result != Result::Ok) return finish(c, result);
+                    --c.write_index;
                     c.walk = label.previous;
                 }
             }
@@ -190,7 +226,17 @@ Result integerPreparedRouteResult(const IntegerPreparedRouteCursor& c, const Int
     count = 0;
     cost = 0;
     if (c.terminal != Result::Ok) return c.terminal;
+    if (c.sink_output) return Result::Unsupported;
     legs = c.legs;
+    count = c.count;
+    cost = c.cost_units;
+    return Result::Ok;
+}
+Result integerPreparedRouteSummary(const IntegerPreparedRouteCursor& c, size_t& count, uint64_t& cost)
+{
+    count = 0;
+    cost = 0;
+    if (c.terminal != Result::Ok) return c.terminal;
     count = c.count;
     cost = c.cost_units;
     return Result::Ok;

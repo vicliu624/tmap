@@ -41,6 +41,9 @@ class TerrainReader
     TerrainReader(const TerrainReader&) = delete;
     TerrainReader& operator=(const TerrainReader&) = delete;
     Result initialize();
+    // Display sampling selects a level; the default initialize() retains the
+    // finest available grid for profiles and analytical elevation queries.
+    Result initializeForZoom(uint8_t zoom);
     const TerrainInfo& info() const { return info_; }
     Result elevation(GeoPoint point, ElevationSample& output);
     Result beginElevation(GeoPoint point, ElevationCursor& cursor);
@@ -50,6 +53,8 @@ class TerrainReader
     OutdoorPackage& package_;
     TerrainInfo info_{};
     uint64_t generation_ = 0;
+    uint64_t package_generation_ = 0, index_base_ = 0, data_base_ = 0;
+    bool lod_selected_ = false;
     bool initialized_ = false;
     ElevationCursor elevation_cursor_{};
     Result sample(ElevationCursor& cursor, uint32_t x, uint32_t y, int16_t& output);

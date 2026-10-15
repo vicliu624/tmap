@@ -11,8 +11,10 @@ namespace
 #if defined(__GNUC__) || defined(__clang__)
 __attribute__((noinline))
 #endif
-Result beginPreparedPhase(GraphReader& graph, IntegerCoordinateRouteCursor& c)
+Result
+beginPreparedPhase(GraphReader& graph, IntegerCoordinateRouteCursor& c)
 {
+    if (c.sink_output) return beginIntegerPreparedRouteToSink(graph, c.starts, c.ends, c.options, c.workspace, *c.sink, c.capacity, c.scratch.searching);
     return beginIntegerPreparedRoute(graph, c.starts, c.ends, c.options, c.workspace, c.legs, c.capacity, c.scratch.searching);
 }
 } // namespace
@@ -35,6 +37,7 @@ Result beginIntegerCoordinateRoute(GraphReader& graph, GeoPoint start, GeoPoint 
     c.start = start;
     c.destination = destination;
     c.legs = legs;
+    c.sink_output = false;
     c.capacity = capacity;
     c.generation = graph.package().generation();
     c.snap_distance_m = radius;
@@ -44,7 +47,29 @@ Result beginIntegerCoordinateRoute(GraphReader& graph, GeoPoint start, GeoPoint 
     c.terminal = Result::More;
     return Result::Ok;
 }
+Result beginIntegerCoordinateRouteToSink(GraphReader& graph, GeoPoint start, GeoPoint destination,
+                                         IntegerRouteOptions options, double radius, IntegerRouteWorkspace workspace,
+                                         IntegerRouteLegSink& sink, size_t capacity, IntegerCoordinateRouteCursor& c)
+{
+    if (capacity > UINT32_MAX) return Result::Invalid;
+    // A live endpoint leg is a never-written marker; the prepared phase uses sink.
+    const auto r = beginIntegerCoordinateRoute(graph, start, destination, options, radius, workspace,
+                                               &c.starts.choices[0].leg, capacity, c);
+    if (r == Result::Ok)
+    {
+        c.sink = &sink;
+        c.sink_output = true;
+    }
+    return r;
+}
 void cancel(IntegerCoordinateRouteCursor& c) { c.terminal = Result::Cancelled; }
+Result integerCoordinateRouteSummary(const IntegerCoordinateRouteCursor& c, size_t& count, uint64_t& cost)
+{
+    count = 0;
+    cost = 0;
+    if (c.terminal != Result::Ok) return c.terminal;
+    return integerPreparedRouteSummary(c.scratch.searching, count, cost);
+}
 Result integerCoordinateRouteResult(const IntegerCoordinateRouteCursor& c, const IntegerRouteLeg*& legs, size_t& count, uint64_t& cost)
 {
     legs = nullptr;

@@ -9,7 +9,9 @@ them before packaging. Display zoom and storage topology are independent.
 
 The first 256 bytes are a header, padded to physical page size P (1024/2048/4096).
 Directory starts at P. Body starts at align_up(P+64*section_count,P); sections
-are P-aligned. At most 64 sections. Default P4096 retains original offsets.
+are P-aligned. At most 64 sections for the outdoor-only profile. The required
+[unified-display extension](UNIFIED_MAP.md) permits 128 directory entries and
+uses P4096. Default P4096 retains original offsets.
 Reader directory storage defaults to 32 slots and is explicitly configurable;
 a valid package exceeding the selected slot count returns BudgetExceeded.
 Directory opening streams fixed-size chunks with caller-selected work budgets.

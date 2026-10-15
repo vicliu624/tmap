@@ -185,6 +185,7 @@ Status Reader::open(RandomAccessFile& file)
     const auto* h = bytes.data();
     constexpr uint8_t magic[] = {'T', 'M', 'A', 'P', '\r', '\n', 0x1a, '\n'};
     const auto count = u32(h + 48);
+    if (u16(h + 8) == 2 && u16(h + 10) == 0 && u64(h + 24) == 8) return openUnified(file);
     if (std::memcmp(h, magic, 8) || u16(h + 8) != 1 || u16(h + 10) != 0 || u32(h + 12) != 256 ||
         u32(h + 16) != 0x01020304 || u32(h + 20) != 4096 || (u64(h + 24) & ~UINT64_C(7)) ||
         u64(h + 32) != file.size() || u64(h + 40) != 4096 || !count || count > Workspace::kMaxSections ||

@@ -1,5 +1,9 @@
 # Bounded DEM elevation profiles
 
+The current native-map 96-column London check measures 13,896 B of provider
+payload plus a 160 B owner; see [its raw result](center-london-profile-96.json).
+The resource matrices below preserve their original source/cache checkpoints.
+
 The library samples a caller-supplied geographic polyline: two points define a
 straight E7-interpolated terrain section, while a route geometry defines a route
 profile. It does not infer a walkable path between two points. Supply actual

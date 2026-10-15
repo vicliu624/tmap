@@ -3,8 +3,11 @@
 #include <tmap/package.h>
 #include <tmap/profile_job.h>
 #include <tmap/resource_budget.h>
+#include <tmap/route_archive.h>
 #include <tmap/route_storage.h>
 static tmap::PackageWorkspace storage;
+static tmap::RouteArchiveWorkspace route_pages;
+static tmap::RouteArchiveQueryCursor route_query;
 class EmptyFile final : public tmap::RandomAccessFile
 {
   public:
@@ -35,6 +38,10 @@ int main()
         budget.total_bytes < sizeof(tmap::PackageWorkspace) + 128 * sizeof(tmap::IntegerRouteLabel)) return 2;
     UnavailableMemory provider;
     EmptyFile file;
+    tmap::RouteArchiveReader archive(route_pages);
+    if (archive.open(file) != tmap::Result::Incomplete || archive.beginQuery({}, route_query) != tmap::Result::Invalid) return 6;
+    tmap::MemoryObject<tmap::RouteArchiveWorkspace> saved_pages(provider);
+    if (saved_pages.create() != tmap::Result::BudgetExceeded || provider.internal_requests) return 7;
     tmap::ProfileJob profile(provider);
     const tmap::GeoPoint line[] = {{0, 0}, {1000, 1000}};
     if (profile.begin(file, line, 2) != tmap::Result::BudgetExceeded || profile.reservedBytes() || provider.internal_requests)

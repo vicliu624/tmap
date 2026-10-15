@@ -3,6 +3,15 @@
 #include "tmap/integer_route.h"
 namespace tmap
 {
+// Random-position, idempotent output. Busy/More consumes nothing. A new best
+// candidate can overwrite earlier rows; only the final cursor count is valid.
+// The sink and endpoint candidates must outlive the planner.
+class IntegerRouteLegSink
+{
+  public:
+    virtual ~IntegerRouteLegSink() = default;
+    virtual Result writeLeg(uint32_t index, const IntegerRouteLeg& leg) = 0;
+};
 struct IntegerPreparedRouteCursor
 {
     const IntegerEndpointCandidates* starts = nullptr;
@@ -11,7 +20,11 @@ struct IntegerPreparedRouteCursor
     IntegerRouteCursor search{};
     IntegerRouteWorkspace workspace{};
     IntegerRouteOptions options{};
-    IntegerRouteLeg* legs = nullptr;
+    union
+    {
+        IntegerRouteLeg* legs = nullptr;
+        IntegerRouteLegSink* sink;
+    };
     size_t capacity = 0, count = 0, walk_count = 0, write_index = 0;
     uint64_t generation = 0, cost_units = 0, pending_cost = 0;
     uint32_t walk = UINT32_MAX;
@@ -19,11 +32,18 @@ struct IntegerPreparedRouteCursor
     uint8_t pair = 0, stage = 0;
     bool found = false, coverage_limited = false;
     Result terminal = Result::Invalid;
+    bool sink_output = false;
 };
 Result beginIntegerPreparedRoute(GraphReader& graph, const IntegerEndpointCandidates& starts, const IntegerEndpointCandidates& ends,
                                  IntegerRouteOptions options, IntegerRouteWorkspace workspace, IntegerRouteLeg* legs, size_t capacity,
                                  IntegerPreparedRouteCursor& cursor);
 Result integerPreparedRouteStep(GraphReader& graph, IntegerPreparedRouteCursor& cursor, size_t budget);
+Result beginIntegerPreparedRouteToSink(GraphReader& graph, const IntegerEndpointCandidates& starts,
+                                       const IntegerEndpointCandidates& ends, IntegerRouteOptions options,
+                                       IntegerRouteWorkspace workspace, IntegerRouteLegSink& sink, size_t capacity,
+                                       IntegerPreparedRouteCursor& cursor);
 void cancel(IntegerPreparedRouteCursor& cursor);
 Result integerPreparedRouteResult(const IntegerPreparedRouteCursor& cursor, const IntegerRouteLeg*& legs, size_t& count, uint64_t& cost_units);
+// Available for both array and sink output, without exposing a borrowed array.
+Result integerPreparedRouteSummary(const IntegerPreparedRouteCursor& cursor, size_t& count, uint64_t& cost_units);
 } // namespace tmap

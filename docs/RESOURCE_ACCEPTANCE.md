@@ -3,10 +3,20 @@
 Requirement: equivalent Trail Mate workloads must not become more expensive;
 new features must have explicit, frugal storage and work budgets.
 
-## Existing workload
+## Current persistent-route acceptance
 
-The v1 .cpp implementations remain byte-for-byte identical; reader.h adds only
-a friend declaration (see NOTICE). Host Workspace is 14,024 bytes
+See [20 km route evidence](ROUTE_ARCHIVE_EVIDENCE.md) and its raw JSON for the
+current native-map search, spool, export and independent saved-route read phases.
+The read provider peaks at 1,768 B on the measured 32-bit ABI; long-route search
+still requires explicit, substantially larger budgets. Physical board peaks
+remain unmeasured. Later sections below preserve their original checkpoints.
+
+## Archived display baseline
+
+At this checkpoint the imported .cpp implementations were byte-for-byte
+identical and reader.h added only a friend declaration (see NOTICE). The current
+reader additionally dispatches native-container headers to a separate parser.
+The baseline host Workspace is 14,024 bytes
 and SearchCursor 856 bytes. Real world/China probes match pixels, annotations,
 POIs, searches and page reads (217/183 at checkpoints), including a China tile
 at offset 21,634,830,336. Source hashes are recorded in NOTICE.md. This establishes
@@ -14,7 +24,7 @@ compatibility and unchanged algorithm/storage behavior, not faster ESP execution
 
 ## New capabilities
 
-Latest joint-feature evidence is in FULL_FEATURE_RESOURCES.md and
+The earlier joint-feature evidence is in FULL_FEATURE_RESOURCES.md and
 full-feature-native-evidence.json: defaults remain unchanged; the 37-slot,
 two-page 1 KiB workspace is 3,560 B and the explicitly configured joint-service
 typed payload is 9,240 B. Default/compact/37-slot/64-slot suites pass 32 entries;

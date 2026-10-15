@@ -4,17 +4,21 @@ Portable C++17 library for embedded offline maps, vector contours, elevation
 analysis and foot/bicycle routing. Located independently of Trail Mate; no
 Trail Mate sources or dependencies are required for a normal build.
 
-**0.1.1 is an experimental pre-release.** The portable core and host producers
+**0.2.0 is an experimental pre-release.** The portable core and host producers
 are tested on real map files and cross-compiled for ESP32-S3/C3. Physical MCU
 RAM/PSRAM peaks, task-stack watermarks, SD latency and power remain unmeasured.
 Full navigation does not fit every few-KiB MCU. Choose explicit storage budgets
 and inspect the [resource evidence](docs/RESOURCE_ACCEPTANCE.md) before integration.
 
-- **Display and search:** v1 raster blocks, POIs, names and administrative paths.
-- **Outdoor analysis:** v2 DEM sampling, elevation profiles, ascent/descent,
+- **Display and search:** native raster blocks, POIs, names and administrative paths
+  stored with optional outdoor sections in one TMAP container.
+- **Outdoor analysis:** DEM sampling, elevation profiles, ascent/descent,
   height-tagged vector contours and administrative polygon queries.
 - **Routing:** hiking/cycling graphs, integer costs, turn/access rules, optional
   ALT heuristics and bounded coordinate-to-coordinate routes.
+- **Saved routes:** bounded parent-chain output to a file spool, self-contained
+  route archives, on-file spatial/distance indexes and viewport reads after
+  releasing the map and search workspaces.
 - **Embedded ownership:** no implicit allocation in the algorithm core;
   optional explicit PSRAM-first owners, cancellation and budget errors.
 
@@ -35,7 +39,9 @@ Use `find_package(tmap CONFIG REQUIRED)` and link `tmap::tmap`, or add the sourc
 with `add_subdirectory`. Embedded consumers should disable desktop tools/tests
 as shown below. `library.json` provides a PlatformIO source-library manifest;
 application file, allocation, scheduler and display adapters remain explicit.
-Library version 0.1.1 and on-disk format versions v1/v2 are separate concepts.
+Use SDK 0.2.0 to read Center's generated maps. See
+[native containers and DEM levels](docs/UNIFIED_MAP.md)
+for format, producer, workspace and compatibility details.
 
 Start with the [format](docs/FORMAT.md), [bounded elevation profiles](docs/ELEVATION_PROFILES.md)
 and examples. The [delivery audit](docs/DELIVERY_AUDIT.md) maps implemented features
@@ -43,6 +49,38 @@ to evidence and remaining boundaries. Historical reports retain the exact
 source/configuration they measured; they are not all current build gates.
 
 ## Real-map evidence
+
+The current [persistent-route acceptance](docs/ROUTE_ARCHIVE_EVIDENCE.md) uses
+Center-generated London and Kunming maps and real **20.78 km / 20.27 km** walking
+routes. It checks complete array/sink leg and geometry parity, file close/reopen,
+full integrity validation, and z12/z14/z16/z18 views at the start, middle and end.
+Normal and injected-Busy output must be byte-identical. Raw results retain
+four explicit search-capacity failures alongside ten successful cases.
+
+| Phase / metric | London, 20.78 km | Kunming, 20.27 km |
+| --- | ---: | ---: |
+| Search capacity | 65,536 states | 49,152 states |
+| Configured search library payload | 2,108,244 B | 1,583,956 B |
+| Export payload after releasing search | 11,800 B | 11,800 B |
+| Independent saved-route read payload | 1,768 B | 1,768 B |
+| Saved file | 43,776 B | 14,592 B |
+| Whole geometry query | 34,560 B read | 10,496 B read |
+| Small midpoint spatial query | 1,728 B read | 1,600 B read |
+
+The read payload was also measured through an external-only provider: three
+allocations, zero internal requests, and zero live bytes after release. Three
+optional owner controls add 36 B and the provider control adds 24 B in the tested
+32-bit ABI. Driver buffers, allocator bookkeeping, task stack and display state
+are extra. This verifies PSRAM-first ownership policy through an adapter, not
+physical board peaks. It does **not** make 20 km search a few-KiB operation:
+32,768-state requests fail for both maps, and 49,152 states also fail for London.
+
+See the [persistence API and responsibility split](docs/PERSISTENT_ROUTES.md),
+[archive format](docs/ROUTE_ARCHIVE_FORMAT.md),
+[raw real-map data](docs/route-archive-real-evidence.json) and
+[compiler/test gates](docs/route-archive-validation.json).
+The saved-route reader has a separate link path that does not retain graph,
+search, raster or export implementations. Trail Mate firmware is unchanged.
 
 Trail Mate Center now produces real navigation packages through the SDK tools.
 The [current-reader revalidation](docs/CURRENT_REAL_REVALIDATION.md) repeats
@@ -69,24 +107,26 @@ and reopening the package, which invalidates outstanding cursors.
 
 ## Current implementation
 
-- `tmap::Reader`: unchanged v1 raster, POI, annotation and indexed search reader,
+- `tmap::Reader`: raster, POI, annotation and indexed search reader,
   including POI-row administrative paths and search-result administrative paths.
 - Optional `MemoryBuffer<T>` convenience layer: explicit reservations through
   a platform-provided allocator, external RAM/PSRAM first by default, no silent
   internal-RAM fallback when external memory exists but allocation fails.
-- Coordinate administrative queries: bounded v1 nearby-POI common hierarchy,
-  explicit approximate/limited results; v2 streamed integer E7 containment,
+- Coordinate administrative queries: bounded nearby-POI common hierarchy,
+  explicit approximate/limited results; streamed integer E7 containment,
   holes and shared-boundary common paths without loading whole polygons.
   [Real boundary checks](docs/REAL_ADMINISTRATIVE_BOUNDARIES.md) cover all 33
   components in the Center sample, including boundary and outside queries.
-- `OutdoorPackage`: independently versioned 2.0 outdoor container, integrity
-  pages and streaming validation. v2 is not readable by existing Trail Mate.
+- `OutdoorPackage`: outdoor sections, integrity pages and streaming validation
+  in the same map. Device firmware needs the corresponding SDK integration.
 - `TerrainReader`: bilinear elevation queries, explicit resolution/datum,
   missing samples; bounded line/route profiles and noise-filtered ascent/descent.
   [Bounded profile job and display reducer](docs/ELEVATION_PROFILES.md) add explicit
   sample/storage limits, PSRAM-first ownership and real Center/C++ comparisons.
-  The real-file 96-column profile uses 13,872 B default or 7728 B compact provider
-  payload on the measured host ABI, plus a 160 B owner and borrowed inputs.
+  The current Center London 96-column profile uses 13,896 B provider payload,
+  plus a 160 B owner and borrowed inputs on the measured 32-bit ABI; its
+  [raw result](docs/center-london-profile-96.json) retains all counters.
+  Earlier compact-profile figures use their recorded map/cache configuration.
   Forty-eight default/compact/Busy/coverage/budget cases are recorded; these are
   configured library payloads, not whole-device RAM or PSRAM peaks.
 - Vector contours: packed spatial tree, delta/varint geometry, streamed
@@ -254,7 +294,7 @@ Current host sizes (32-bit pointers, 64-bit file offsets, MinGW GCC 9.2):
 
 | Storage | Bytes | Ownership |
 |---|---:|---|
-| Legacy v1 Workspace | 14,024 | caller, unchanged baseline |
+| Display Workspace | 14,024 | caller, unchanged baseline |
 | Outdoor PackageWorkspace | 9,504 | caller, two 4 KiB pages |
 | ContourCursor | 488 | caller per active query |
 | RouteLabel + heap slot | 36 | caller per search capacity slot |
@@ -262,7 +302,7 @@ Current host sizes (32-bit pointers, 64-bit file offsets, MinGW GCC 9.2):
 | ContourRenderCursor | 560 | caller, including contour continuation |
 | ContourSegment | 24 | caller per retained draw segment |
 | Reader / OutdoorPackage | 120 / 200 | control objects, not workspaces |
-| TerrainReader / GraphReader | 128 / 296 | control objects; terrain retains Busy progress; graph caches routing profile |
+| TerrainReader / GraphReader | 152 / 296 | control objects; terrain retains Busy progress and DEM level; graph caches routing profile |
 | ProfileCursor / Navigator | 200 / 88 | continuation/control objects |
 | MemoryBuffer<T> | 16 | optional ownership wrapper; excludes allocator overhead |
 | AdministrativeWorkspace / AdministrativeCursor | 1,026 / 488 | exact query storage |
@@ -273,7 +313,7 @@ Current host sizes (32-bit pointers, 64-bit file offsets, MinGW GCC 9.2):
 For 128 routing slots the two search arrays require 4,608 bytes; 512 slots use
 18,432 bytes. These figures exclude the small reader/cursor control objects,
 retained route geometry, application draw cache and filesystem buffers. Reuse
-storage between v1 and v2 sessions rather than allocating both unnecessarily.
+storage between display and analysis sessions rather than allocating both unnecessarily.
 Core APIs never choose PSRAM or fall back to internal RAM: the caller controls
 placement and budgets in the borrowed-buffer APIs. The optional memory wrapper
 enforces external-first allocation requests as described below.
@@ -355,20 +395,20 @@ not complete firmware RAM requirements, using the measured host ABI:
 
 | Selected workload | Calculation | Buffer subtotal |
 |---|---|---:|
-| v1 indexed search | workspace + SearchCursor | 14,880 B |
+| Indexed search | workspace + SearchCursor | 14,880 B |
 | streaming contours | outdoor workspace + ContourCursor | 9,992 B |
 | retained contours, 64 segments | workspace + render cursor + 64*24 | 11,600 B |
 | retained contours, 512 segments | workspace + render cursor + 512*24 | 22,352 B |
 | coordinate search, 128 slots, 64 output legs | workspace + planner + 128*36 + 64*20 | 16,768 B |
 | coordinate search, 512 slots, 256 output legs | workspace + planner + 512*36 + 256*20 | 34,432 B |
 | exact administrative query | outdoor workspace + query workspace/cursor | 11,018 B |
-| v1 approximate query, 4 candidates | v1 workspace + query workspace/cursor + 4*540 | 17,784 B |
+| Approximate query, 4 candidates | display workspace + query workspace/cursor + 4*540 | 17,784 B |
 
 Add control objects, memory-provider bookkeeping, task/call-chain stack, input
 and result geometry, filesystem cache, framebuffer and other application RAM.
-Concurrent v1/v2 sessions need both workspaces; reuse storage only after the old
+Concurrent display/analysis sessions need both workspaces; reuse storage only after the preceding
 session and its consumers finish. A few-KiB-RAM device cannot run these current
-legacy/full-feature readers. Compact outdoor storage and integer coordinate
+full-feature readers. Compact outdoor storage and integer coordinate
 navigation are implemented; rendering and DEM interpolation still use floating
 point. Dijkstra capacity can exhaust on real
 large regions even when a short route exists; no fixed RAM budget guarantees
@@ -378,7 +418,7 @@ successful arbitrary-region routing.
 
 Compile configuration: TMAP_CACHE_PAGE_BYTES=1024/2048/4096,
 TMAP_PACKAGE_CACHE_PAGES=2..4, TMAP_PACKAGE_SECTION_SLOTS=4..64 (default 32). Workspace sizes
-larger than the unchanged v1 baseline are rejected; 4 KiB/four pages is excluded.
+larger than the unchanged display baseline are rejected; 4 KiB/four pages is excluded.
 At least two pages support cross-page record progress. CMake exports definitions
 to consumers; ABI tags reject mismatched header/library configurations at link.
 The joint DEM/contour/admin/runtime-road/barrier/turn/ALT profile currently uses
@@ -404,7 +444,7 @@ python tools/tmap_pack.py input.json output.tmap --page-bytes 1024
 | 1 KiB, 4 slots (only fitting packages) | 2,240 B | 3,810 B |
 
 Lower capacity returns BudgetExceeded for larger physical pages/directory counts,
-never reallocates. Default 4 KiB capacity reads smaller pages too. Legacy v1
+never reallocates. Default 4 KiB capacity reads smaller pages too. Display storage
 remains fixed and needs 14,024 B. Add controllers, stack, wrappers, filesystem
 and UI storage. open(file, section_budget) retains streamed directory chunks and
 CRC across More/Busy even when all 32 entries exceed a compact cache page.
@@ -481,7 +521,7 @@ portable code cannot identify physical PSRAM from arbitrary borrowed pointers.
 Thus use this wrapper consistently for all large buffers to enforce the policy;
 raw caller-provided buffers retain the caller's explicit placement decision.
 
-### Reproducible experiments, 2026-10-14
+### Reproducible experiments and recorded checkpoints
 
 Local reports: [host](docs/evidence-host.json),
 [S3](docs/evidence-esp32s3.json), [C3](docs/evidence-esp32c3.json).
@@ -490,7 +530,8 @@ object sizes. These are recorded results, not estimated device performance.
 
 | Experiment | Result / evidence | What it establishes |
 |---|---|---|
-| Release CTest | 38/38 entries pass in default and compact profiles with optional geometry/codecs installed | includes bounded profile ownership/display reduction, shared-cache progress, raw topology, administrative import, file identity/SHA-256, virtual-region production/routing, owner rollback, integer routing, cancellation, ABI mismatch and DEM Busy regression |
+| Current archive gate | 40/40 default host entries, core-only build, ESP32-S3 cross build and isolated reader linkage pass | current commands, normalized source hashes, cursor-size baseline and compiler frames in [route archive gates](docs/route-archive-validation.json) |
+| Archived release checkpoint | 38/38 entries passed in the recorded default and compact profiles with optional geometry/codecs | includes profile ownership/display reduction, cache progress, raw topology, administrative import, file identity, SHA-256, virtual regions, cancellation, ABI mismatch and DEM Busy regression |
 | Allocation interception | 0 implicit core allocations on exercised terrain/routing/rendering paths | no hidden growth in these paths; not total application allocation |
 | Owned service composition | external-region requests, Busy, coordinate route, clipped geometry, GPS arrival, contours; exact live payload accounting and zero allocations after teardown | default/1 KiB host integration test, not physical PSRAM peak evidence |
 | Large graph | 2,048 nodes, 2,047 edges/legs, exact cost, capacity/no-path/cancellation tests | fixed arrays, correct completion/failure |
@@ -507,7 +548,7 @@ object sizes. These are recorded results, not estimated device performance.
 | Producer tests | planar DEM, saddle, NoData, LOD endpoints, HGT orientation, access/one-way/unsupported rules | prepared format and import behavior |
 | Consumer tests | installed find_package and add_subdirectory parent | independence from Trail Mate and opt-in desktop utilities |
 | Memory placement | external-first, no silent fallback, absent PSRAM, alignment/overflow, release ownership | portable convenience policy via instrumented provider, not real PSRAM hardware |
-| Real v1 maps | 5 comparisons each, outputs identical; world 217 / China 183 checkpoint page reads | compatibility, not ESP latency |
+| Archived display baselines | 5 comparisons each, outputs identical; world 217 / China 183 checkpoint page reads | regression evidence, not ESP latency |
 | Real mountain crop | 145*109 DEM samples, reader 7225.91 m vs input 7225.913557 m at sample | interpolation agrees with input; not independent ground truth |
 
 The [integer coordinate navigation entry point](docs/INTEGER_COORDINATE_ROUTE.md)
@@ -689,7 +730,7 @@ Incomplete for candidate-limited partial results. Cancel before Reader
 close/reopen, including identical media. Dedicated real-data accuracy evidence
 remains missing; synthetic validation is not inferred from baseline page counts.
 
-`beginAdministrativeQuery`/`administrativeStep` query v2 polygons with integer
+`beginAdministrativeQuery`/`administrativeStep` query supplied polygons with integer
 E7 predicates/even-odd rings. Holes exclude interiors; shared boundaries return
 the common hierarchy at the deepest matched level and boundary=true. This is
 containment in supplied data, not legal accuracy or GPS certainty. Input must
@@ -708,8 +749,8 @@ not district accuracy. Source data stays in ignored build cache, not releases.
 
 | Missing item | Current boundary / required follow-up |
 |---|---|
-| Coordinate administrative hierarchy | implemented/tested v1 approximation; real-data accuracy validation remains |
-| Exact point-in-administrative-boundary | v2 polygon query tested against real OSM country/district/municipal geometry; see REAL_OUTDOOR_JOINT.md |
+| Coordinate administrative hierarchy | nearby-POI approximation implemented/tested; real-data accuracy validation remains |
+| Exact point-in-administrative-boundary | polygon query tested against real OSM country/district/municipal geometry; see REAL_OUTDOOR_JOINT.md |
 | Very small MCU memory profile | compact caches and integer coordinate routing implemented; full-feature workload still exceeds a few KiB |
 | Cross-file runtime routing | verified source/patch routing, original-source seam reconstruction and compatible terrain/admin/contour composition implemented; see RAW_REGION_SEAMS.md and REGIONAL_OUTDOOR_COMPOSITION.md |
 | Very large-region acceleration | bounded Dijkstra; no routing hierarchy/guaranteed nationwide search |
@@ -717,12 +758,12 @@ not district accuracy. Source data stays in ignored build cache, not releases.
 | Device navigation integration | GPS, audio, scheduler, display, replan policy and filesystem supplied by application |
 | Hardware resource acceptance | final firmware flash, stack watermark, RAM/PSRAM peaks, SD latency and power still need measurement |
 
-Real world and China v1 map probes are compared with the original Trail Mate
+Archived world and China display probes are compared with the original Trail Mate
 core in [world report](docs/baseline-world.json) and
 [China report](docs/baseline-china.json). Outputs and page counts match exactly,
 including a pixel at a 21.6 GB offset. Desktop wall times fluctuate and do not
-prove ESP speed. Existing v1 implementations/layout are preserved; reader.h adds
-only a friend declaration for the iterative adapter, documented in NOTICE.
+prove ESP speed. Source-preserved display encodings and the native container
+adapter are documented in NOTICE and the format specification.
 
 The outdoor workspaces have stricter memory limits than the old reader, but
 new navigation/terrain features have no equivalent old workload to compare.
