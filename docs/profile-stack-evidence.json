@@ -1,0 +1,136 @@
+{
+  "scope": "Actual GCC14 MinSizeRel cross-compiler static owner frames; not cumulative task stack or physical board watermark.",
+  "gate_bytes": 240,
+  "profiles": {
+    "s3": {
+      "maximum_frame_bytes": 80,
+      "entries": [
+        {
+          "symbol": "./include/tmap/profile_plot.h:69:17:static bool tmap::ProfilePlot::visit(void*, const tmap::ProfileSample&)",
+          "bytes": 64,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/profile_job.h:103:10:void tmap::ProfileJob::reset()",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./tests/profile_compile.cpp:11:6:void profileCancel(tmap::ProfileJob&)",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./tests/profile_compile.cpp:12:8:size_t profileBytes(size_t)",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/memory_object.h:21:12:) [with Args = {}; T = tmap::ProfileCursor]",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/memory.h:42:12:tmap::Result tmap::MemoryBuffer<T>::reserve(size_t) [with T = tmap::ProfileColumn]",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./tests/profile_compile.cpp:5:14:tmap::Result profileBegin(tmap::ProfileJob&, tmap::RandomAccessFile&, const tmap::GeoPoint*, size_t, const tmap::ProfileJobOptions&)",
+          "bytes": 80,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/memory_object.h:21:12:) [with Args = {}; T = tmap::PackageWorkspace]",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/memory_object.h:21:12:) [with Args = {tmap::PackageWorkspace&}; T = tmap::OutdoorPackage]",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/memory_object.h:21:12:) [with Args = {tmap::OutdoorPackage&}; T = tmap::TerrainReader]",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/profile_job.h:56:12:tmap::Result tmap::ProfileJob::step(size_t)",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./tests/profile_compile.cpp:10:14:tmap::Result profileAdvance(tmap::ProfileJob&, size_t)",
+          "bytes": 32,
+          "kind": "static"
+        }
+      ]
+    },
+    "c3_compact": {
+      "maximum_frame_bytes": 160,
+      "entries": [
+        {
+          "symbol": "./include/tmap/profile_plot.h:69:17:static bool tmap::ProfilePlot::visit(void*, const tmap::ProfileSample&)",
+          "bytes": 112,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/profile_job.h:103:10:void tmap::ProfileJob::reset()",
+          "bytes": 16,
+          "kind": "static"
+        },
+        {
+          "symbol": "./tests/profile_compile.cpp:11:6:void profileCancel(tmap::ProfileJob&)",
+          "bytes": 16,
+          "kind": "static"
+        },
+        {
+          "symbol": "./tests/profile_compile.cpp:12:8:size_t profileBytes(size_t)",
+          "bytes": 0,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/memory_object.h:21:12:) [with Args = {}; T = tmap::ProfileCursor]",
+          "bytes": 16,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/memory.h:42:12:tmap::Result tmap::MemoryBuffer<T>::reserve(size_t) [with T = tmap::ProfileColumn]",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./tests/profile_compile.cpp:5:14:tmap::Result profileBegin(tmap::ProfileJob&, tmap::RandomAccessFile&, const tmap::GeoPoint*, size_t, const tmap::ProfileJobOptions&)",
+          "bytes": 160,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/memory_object.h:21:12:) [with Args = {}; T = tmap::PackageWorkspace]",
+          "bytes": 16,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/memory_object.h:21:12:) [with Args = {tmap::PackageWorkspace&}; T = tmap::OutdoorPackage]",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/memory_object.h:21:12:) [with Args = {tmap::OutdoorPackage&}; T = tmap::TerrainReader]",
+          "bytes": 32,
+          "kind": "static"
+        },
+        {
+          "symbol": "./include/tmap/profile_job.h:56:12:tmap::Result tmap::ProfileJob::step(size_t)",
+          "bytes": 16,
+          "kind": "static"
+        },
+        {
+          "symbol": "./tests/profile_compile.cpp:10:14:tmap::Result profileAdvance(tmap::ProfileJob&, size_t)",
+          "bytes": 0,
+          "kind": "static"
+        }
+      ]
+    }
+  }
+}

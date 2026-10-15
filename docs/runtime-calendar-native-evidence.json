@@ -1,0 +1,9 @@
+{
+  "cycle_days": 146097,
+  "grammar_cases": 15300,
+  "predicate_evaluations": 162684,
+  "predicate_bytes": 16,
+  "input_sha256": "50cb4bdf5615441ae93271907f3dfc689d800b1fa11e48c8642f574c94c26bf7",
+  "probe_sha256": "95df5ee5a2d4b1cf20f7b149a845e09f5309ace7d7bc5ce484a8e51f043e5b5a",
+  "scope": "Actual C++ calendar primitive against independent Python datetime over a full 400-year cycle and Python OSM grammar/timezone/overnight cases. Routing edge/turn integration remains unfinished; not hardware memory/latency evidence."
+}

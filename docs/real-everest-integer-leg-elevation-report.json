@@ -1,0 +1,1667 @@
+{
+  "package_sha256": "65ed9ebb4588cfd64b468348d5c9f86da24ece2cce7d491041d27696f6f5d151",
+  "probe_sha256": "1ebfbf0ac51d8742698c65f5debc5122f5d01493bba12608bd9752638e1693c9",
+  "cases": [
+    {
+      "legs": [
+        [
+          0,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        539368,
+        2443,
+        224524
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 539368,
+        "ascent_cm": 2443,
+        "descent_cm": 224524,
+        "continuation_calls": 5,
+        "read_attempts": 4,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        539368,
+        2443,
+        224524
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 539368,
+        "ascent_cm": 2443,
+        "descent_cm": 224524,
+        "continuation_calls": 8,
+        "read_attempts": 7,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          0,
+          134842,
+          404526
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        269684,
+        2443,
+        122339
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 269684,
+        "ascent_cm": 2443,
+        "descent_cm": 122339,
+        "continuation_calls": 35,
+        "read_attempts": 13,
+        "successful_bytes": 12864,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          0,
+          134842,
+          404526
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        269684,
+        2443,
+        122339
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 269684,
+        "ascent_cm": 2443,
+        "descent_cm": 122339,
+        "continuation_calls": 47,
+        "read_attempts": 25,
+        "successful_bytes": 12864,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          269684
+        ],
+        [
+          0,
+          269684,
+          539368
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        539368,
+        2443,
+        224524
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 539368,
+        "ascent_cm": 2443,
+        "descent_cm": 224524,
+        "continuation_calls": 41,
+        "read_attempts": 16,
+        "successful_bytes": 15936,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          269684
+        ],
+        [
+          0,
+          269684,
+          539368
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        539368,
+        2443,
+        224524
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 539368,
+        "ascent_cm": 2443,
+        "descent_cm": 224524,
+        "continuation_calls": 56,
+        "read_attempts": 31,
+        "successful_bytes": 15936,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          1,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        76994,
+        3709,
+        23310
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 76994,
+        "ascent_cm": 3709,
+        "descent_cm": 23310,
+        "continuation_calls": 5,
+        "read_attempts": 4,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          1,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        76994,
+        3709,
+        23310
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 76994,
+        "ascent_cm": 3709,
+        "descent_cm": 23310,
+        "continuation_calls": 8,
+        "read_attempts": 7,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          1,
+          19248,
+          57745
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        38497,
+        0,
+        17477
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 38497,
+        "ascent_cm": 0,
+        "descent_cm": 17477,
+        "continuation_calls": 30,
+        "read_attempts": 10,
+        "successful_bytes": 9792,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          1,
+          19248,
+          57745
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        38497,
+        0,
+        17477
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 38497,
+        "ascent_cm": 0,
+        "descent_cm": 17477,
+        "continuation_calls": 39,
+        "read_attempts": 19,
+        "successful_bytes": 9792,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          1,
+          0,
+          38497
+        ],
+        [
+          1,
+          38497,
+          76994
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        76994,
+        3709,
+        23310
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 76994,
+        "ascent_cm": 3709,
+        "descent_cm": 23310,
+        "continuation_calls": 37,
+        "read_attempts": 11,
+        "successful_bytes": 10816,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          1,
+          0,
+          38497
+        ],
+        [
+          1,
+          38497,
+          76994
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        76994,
+        3709,
+        23310
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 76994,
+        "ascent_cm": 3709,
+        "descent_cm": 23310,
+        "continuation_calls": 47,
+        "read_attempts": 21,
+        "successful_bytes": 10816,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          2,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        76994,
+        23310,
+        3709
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 76994,
+        "ascent_cm": 23310,
+        "descent_cm": 3709,
+        "continuation_calls": 5,
+        "read_attempts": 4,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          2,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        76994,
+        23310,
+        3709
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 76994,
+        "ascent_cm": 23310,
+        "descent_cm": 3709,
+        "continuation_calls": 8,
+        "read_attempts": 7,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          2,
+          19248,
+          57745
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        38497,
+        17477,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 38497,
+        "ascent_cm": 17477,
+        "descent_cm": 0,
+        "continuation_calls": 29,
+        "read_attempts": 8,
+        "successful_bytes": 7744,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          2,
+          19248,
+          57745
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        38497,
+        17477,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 38497,
+        "ascent_cm": 17477,
+        "descent_cm": 0,
+        "continuation_calls": 36,
+        "read_attempts": 15,
+        "successful_bytes": 7744,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          2,
+          0,
+          38497
+        ],
+        [
+          2,
+          38497,
+          76994
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        76994,
+        23310,
+        3709
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 76994,
+        "ascent_cm": 23310,
+        "descent_cm": 3709,
+        "continuation_calls": 35,
+        "read_attempts": 9,
+        "successful_bytes": 8768,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          2,
+          0,
+          38497
+        ],
+        [
+          2,
+          38497,
+          76994
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        76994,
+        23310,
+        3709
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 76994,
+        "ascent_cm": 23310,
+        "descent_cm": 3709,
+        "continuation_calls": 43,
+        "read_attempts": 17,
+        "successful_bytes": 8768,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          3,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        605026,
+        977,
+        97774
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 605026,
+        "ascent_cm": 977,
+        "descent_cm": 97774,
+        "continuation_calls": 5,
+        "read_attempts": 4,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          3,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        605026,
+        977,
+        97774
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 605026,
+        "ascent_cm": 977,
+        "descent_cm": 97774,
+        "continuation_calls": 8,
+        "read_attempts": 7,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          3,
+          151256,
+          453769
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        302513,
+        977,
+        34176
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 302513,
+        "ascent_cm": 977,
+        "descent_cm": 34176,
+        "continuation_calls": 35,
+        "read_attempts": 16,
+        "successful_bytes": 15936,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          3,
+          151256,
+          453769
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        302513,
+        977,
+        34176
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 302513,
+        "ascent_cm": 977,
+        "descent_cm": 34176,
+        "continuation_calls": 50,
+        "read_attempts": 31,
+        "successful_bytes": 15936,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          3,
+          0,
+          302513
+        ],
+        [
+          3,
+          302513,
+          605026
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        605026,
+        977,
+        97774
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 605026,
+        "ascent_cm": 977,
+        "descent_cm": 97774,
+        "continuation_calls": 41,
+        "read_attempts": 16,
+        "successful_bytes": 15936,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          3,
+          0,
+          302513
+        ],
+        [
+          3,
+          302513,
+          605026
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        605026,
+        977,
+        97774
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 605026,
+        "ascent_cm": 977,
+        "descent_cm": 97774,
+        "continuation_calls": 56,
+        "read_attempts": 31,
+        "successful_bytes": 15936,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          4,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        36013,
+        2192,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 36013,
+        "ascent_cm": 2192,
+        "descent_cm": 0,
+        "continuation_calls": 5,
+        "read_attempts": 4,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          4,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        36013,
+        2192,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 36013,
+        "ascent_cm": 2192,
+        "descent_cm": 0,
+        "continuation_calls": 8,
+        "read_attempts": 7,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          4,
+          9003,
+          27009
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        18006,
+        1705,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 18006,
+        "ascent_cm": 1705,
+        "descent_cm": 0,
+        "continuation_calls": 27,
+        "read_attempts": 8,
+        "successful_bytes": 7744,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          4,
+          9003,
+          27009
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        18006,
+        1705,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 18006,
+        "ascent_cm": 1705,
+        "descent_cm": 0,
+        "continuation_calls": 34,
+        "read_attempts": 15,
+        "successful_bytes": 7744,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          4,
+          0,
+          18006
+        ],
+        [
+          4,
+          18006,
+          36013
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        36013,
+        2192,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 36013,
+        "ascent_cm": 2192,
+        "descent_cm": 0,
+        "continuation_calls": 33,
+        "read_attempts": 9,
+        "successful_bytes": 8768,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          4,
+          0,
+          18006
+        ],
+        [
+          4,
+          18006,
+          36013
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        36013,
+        2192,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 36013,
+        "ascent_cm": 2192,
+        "descent_cm": 0,
+        "continuation_calls": 41,
+        "read_attempts": 17,
+        "successful_bytes": 8768,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          5,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        26531,
+        1776,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 26531,
+        "ascent_cm": 1776,
+        "descent_cm": 0,
+        "continuation_calls": 5,
+        "read_attempts": 4,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          5,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        26531,
+        1776,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 26531,
+        "ascent_cm": 1776,
+        "descent_cm": 0,
+        "continuation_calls": 8,
+        "read_attempts": 7,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          5,
+          6632,
+          19898
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        13266,
+        1310,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 13266,
+        "ascent_cm": 1310,
+        "descent_cm": 0,
+        "continuation_calls": 26,
+        "read_attempts": 8,
+        "successful_bytes": 7744,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          5,
+          6632,
+          19898
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        13266,
+        1310,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 13266,
+        "ascent_cm": 1310,
+        "descent_cm": 0,
+        "continuation_calls": 33,
+        "read_attempts": 15,
+        "successful_bytes": 7744,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          5,
+          0,
+          13265
+        ],
+        [
+          5,
+          13265,
+          26531
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        26531,
+        1776,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 26531,
+        "ascent_cm": 1776,
+        "descent_cm": 0,
+        "continuation_calls": 33,
+        "read_attempts": 9,
+        "successful_bytes": 8768,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          5,
+          0,
+          13265
+        ],
+        [
+          5,
+          13265,
+          26531
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        26531,
+        1776,
+        0
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 26531,
+        "ascent_cm": 1776,
+        "descent_cm": 0,
+        "continuation_calls": 41,
+        "read_attempts": 17,
+        "successful_bytes": 8768,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          6,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        36013,
+        0,
+        2192
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 36013,
+        "ascent_cm": 0,
+        "descent_cm": 2192,
+        "continuation_calls": 5,
+        "read_attempts": 4,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          6,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        36013,
+        0,
+        2192
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 36013,
+        "ascent_cm": 0,
+        "descent_cm": 2192,
+        "continuation_calls": 8,
+        "read_attempts": 7,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          6,
+          9003,
+          27009
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        18006,
+        0,
+        1705
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 18006,
+        "ascent_cm": 0,
+        "descent_cm": 1705,
+        "continuation_calls": 27,
+        "read_attempts": 8,
+        "successful_bytes": 7744,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          6,
+          9003,
+          27009
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        18006,
+        0,
+        1705
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 18006,
+        "ascent_cm": 0,
+        "descent_cm": 1705,
+        "continuation_calls": 34,
+        "read_attempts": 15,
+        "successful_bytes": 7744,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          6,
+          0,
+          18006
+        ],
+        [
+          6,
+          18006,
+          36013
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        36013,
+        0,
+        2192
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 36013,
+        "ascent_cm": 0,
+        "descent_cm": 2192,
+        "continuation_calls": 35,
+        "read_attempts": 9,
+        "successful_bytes": 8768,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          6,
+          0,
+          18006
+        ],
+        [
+          6,
+          18006,
+          36013
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        36013,
+        0,
+        2192
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 36013,
+        "ascent_cm": 0,
+        "descent_cm": 2192,
+        "continuation_calls": 43,
+        "read_attempts": 17,
+        "successful_bytes": 8768,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          7,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        539368,
+        224524,
+        2443
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 539368,
+        "ascent_cm": 224524,
+        "descent_cm": 2443,
+        "continuation_calls": 5,
+        "read_attempts": 4,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          7,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        539368,
+        224524,
+        2443
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 539368,
+        "ascent_cm": 224524,
+        "descent_cm": 2443,
+        "continuation_calls": 8,
+        "read_attempts": 7,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          7,
+          134842,
+          404526
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        269684,
+        122339,
+        2443
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 269684,
+        "ascent_cm": 122339,
+        "descent_cm": 2443,
+        "continuation_calls": 35,
+        "read_attempts": 14,
+        "successful_bytes": 13888,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          7,
+          134842,
+          404526
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        269684,
+        122339,
+        2443
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 269684,
+        "ascent_cm": 122339,
+        "descent_cm": 2443,
+        "continuation_calls": 48,
+        "read_attempts": 27,
+        "successful_bytes": 13888,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          7,
+          0,
+          269684
+        ],
+        [
+          7,
+          269684,
+          539368
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        539368,
+        224524,
+        2443
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 539368,
+        "ascent_cm": 224524,
+        "descent_cm": 2443,
+        "continuation_calls": 41,
+        "read_attempts": 14,
+        "successful_bytes": 13888,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          7,
+          0,
+          269684
+        ],
+        [
+          7,
+          269684,
+          539368
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        539368,
+        224524,
+        2443
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 539368,
+        "ascent_cm": 224524,
+        "descent_cm": 2443,
+        "continuation_calls": 54,
+        "read_attempts": 27,
+        "successful_bytes": 13888,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          8,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        26531,
+        0,
+        1776
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 26531,
+        "ascent_cm": 0,
+        "descent_cm": 1776,
+        "continuation_calls": 5,
+        "read_attempts": 4,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          8,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        26531,
+        0,
+        1776
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 26531,
+        "ascent_cm": 0,
+        "descent_cm": 1776,
+        "continuation_calls": 8,
+        "read_attempts": 7,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          8,
+          6632,
+          19898
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        13266,
+        0,
+        1310
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 13266,
+        "ascent_cm": 0,
+        "descent_cm": 1310,
+        "continuation_calls": 26,
+        "read_attempts": 8,
+        "successful_bytes": 7744,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          8,
+          6632,
+          19898
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        13266,
+        0,
+        1310
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 13266,
+        "ascent_cm": 0,
+        "descent_cm": 1310,
+        "continuation_calls": 33,
+        "read_attempts": 15,
+        "successful_bytes": 7744,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          8,
+          0,
+          13265
+        ],
+        [
+          8,
+          13265,
+          26531
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        26531,
+        0,
+        1776
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 26531,
+        "ascent_cm": 0,
+        "descent_cm": 1776,
+        "continuation_calls": 31,
+        "read_attempts": 9,
+        "successful_bytes": 8768,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          8,
+          0,
+          13265
+        ],
+        [
+          8,
+          13265,
+          26531
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        26531,
+        0,
+        1776
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 26531,
+        "ascent_cm": 0,
+        "descent_cm": 1776,
+        "continuation_calls": 39,
+        "read_attempts": 17,
+        "successful_bytes": 8768,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          9,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        605026,
+        97774,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 605026,
+        "ascent_cm": 97774,
+        "descent_cm": 977,
+        "continuation_calls": 5,
+        "read_attempts": 4,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          9,
+          0,
+          4294967295
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        605026,
+        97774,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 605026,
+        "ascent_cm": 97774,
+        "descent_cm": 977,
+        "continuation_calls": 8,
+        "read_attempts": 7,
+        "successful_bytes": 3648,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          9,
+          151256,
+          453769
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        302513,
+        34176,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 302513,
+        "ascent_cm": 34176,
+        "descent_cm": 977,
+        "continuation_calls": 35,
+        "read_attempts": 15,
+        "successful_bytes": 14912,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          9,
+          151256,
+          453769
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        302513,
+        34176,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 302513,
+        "ascent_cm": 34176,
+        "descent_cm": 977,
+        "continuation_calls": 49,
+        "read_attempts": 29,
+        "successful_bytes": 14912,
+        "library_payload_bytes": 10348,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          9,
+          0,
+          302513
+        ],
+        [
+          9,
+          302513,
+          605026
+        ]
+      ],
+      "busy_every": 0,
+      "oracle_cm": [
+        605026,
+        97774,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 605026,
+        "ascent_cm": 97774,
+        "descent_cm": 977,
+        "continuation_calls": 41,
+        "read_attempts": 18,
+        "successful_bytes": 17984,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    },
+    {
+      "legs": [
+        [
+          9,
+          0,
+          302513
+        ],
+        [
+          9,
+          302513,
+          605026
+        ]
+      ],
+      "busy_every": 2,
+      "oracle_cm": [
+        605026,
+        97774,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "length_cm": 605026,
+        "ascent_cm": 97774,
+        "descent_cm": 977,
+        "continuation_calls": 58,
+        "read_attempts": 35,
+        "successful_bytes": 17984,
+        "library_payload_bytes": 10360,
+        "probe_leg_capacity": 32
+      }
+    }
+  ],
+  "scope": "Actual Center package, integer clipped/full/split edges and independent packed-profile arithmetic. Host retained library payload excludes unused probe leg slots, allocator and application overhead. Not MCU peak RAM/stack/PSRAM or surveyed elevation accuracy."
+}

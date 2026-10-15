@@ -1,0 +1,27 @@
+{
+  "label": "host-release",
+  "date": "2026-10-15",
+  "configuration": {
+    "CMAKE_BUILD_TYPE": "Release",
+    "CMAKE_CXX_FLAGS": "",
+    "CMAKE_CXX_FLAGS_MINSIZEREL": "-Os -DNDEBUG",
+    "TMAP_NATIVE_FILE": "ON",
+    "TMAP_BUILD_EXAMPLES": "ON",
+    "TMAP_BUILD_TESTS": "ON",
+    "TMAP_EMBEDDED_CHECKS": "ON",
+    "TMAP_CACHE_PAGE_BYTES": "4096",
+    "TMAP_PACKAGE_CACHE_PAGES": "2",
+    "TMAP_PACKAGE_SECTION_SLOTS": "32"
+  },
+  "stack": {
+    "new_core_max_frame": 208,
+    "limit": 256,
+    "legacy_max_frame": 256,
+    "violations": []
+  },
+  "limitations": "Local compiler/test evidence; no MCU execution, linked firmware flash delta, task stack high-water or device latency measurement.",
+  "ctest": {
+    "command": "ctest --test-dir BUILD --output-on-failure",
+    "output": "Test project BUILD\n      Start  1: memory_policy\n 1/29 Test  #1: memory_policy ....................   Passed    0.04 sec\n      Start  2: memory_object\n 2/29 Test  #2: memory_object ....................   Passed    0.03 sec\n      Start  3: staged_memory\n 3/29 Test  #3: staged_memory ....................   Passed    0.03 sec\n      Start  4: route_storage\n 4/29 Test  #4: route_storage ....................   Passed    0.03 sec\n      Start 15: fixtures\n 5/29 Test #15: fixtures .........................   Passed    0.57 sec\n      Start  5: sha256\n 6/29 Test  #5: sha256 ...........................   Passed    0.05 sec\n      Start  6: file_identity\n 7/29 Test  #6: file_identity ....................   Passed    0.03 sec\n      Start  7: outdoor_session\n 8/29 Test  #7: outdoor_session ..................   Passed    0.03 sec\n      Start  8: composite_file\n 9/29 Test  #8: composite_file ...................   Passed    0.04 sec\n      Start  9: cancellation\n10/29 Test  #9: cancellation .....................   Passed    0.03 sec\n      Start 10: resource_budget\n11/29 Test #10: resource_budget ..................   Passed    0.03 sec\n      Start 11: integer_cost\n12/29 Test #11: integer_cost .....................   Passed    0.03 sec\n      Start 19: stress_fixtures\n13/29 Test #19: stress_fixtures ..................   Passed    0.61 sec\n      Start 12: integer_route\n14/29 Test #12: integer_route ....................   Passed    0.09 sec\n      Start 13: administration\n15/29 Test #13: administration ...................   Passed    0.03 sec\n      Start 14: package_continuations\n16/29 Test #14: package_continuations ............   Passed    0.03 sec\n      Start 16: outdoor\n17/29 Test #16: outdoor ..........................   Passed    0.04 sec\n      Start 17: coordinate_routes\n18/29 Test #17: coordinate_routes ................   Passed    0.03 sec\n      Start 18: contour_renderer\n19/29 Test #18: contour_renderer .................   Passed    0.04 sec\n      Start 20: stress\n20/29 Test #20: stress ...........................   Passed    0.10 sec\n      Start 21: writer\n21/29 Test #21: writer ...........................   Passed    0.23 sec\n      Start 22: maze_comparison\n22/29 Test #22: maze_comparison ..................   Passed    0.09 sec\n      Start 23: importers\n23/29 Test #23: importers ........................   Passed    0.22 sec\n      Start 24: pbf\n24/29 Test #24: pbf ..............................   Passed    0.16 sec\n      Start 25: virtual_regions\n25/29 Test #25: virtual_regions ..................   Passed    0.20 sec\n      Start 26: cli\n26/29 Test #26: cli ..............................   Passed    0.42 sec\n      Start 27: installed_consumer\n27/29 Test #27: installed_consumer ...............   Passed    0.83 sec\n      Start 28: storage_profile_abi\n28/29 Test #28: storage_profile_abi ..............   Passed    2.51 sec\n      Start 29: stack_budget\n29/29 Test #29: stack_budget .....................   Passed    0.09 sec\n\n100% tests passed, 0 tests failed out of 29\n\nTotal Test time (real) =   6.74 sec\n"
+  }
+}

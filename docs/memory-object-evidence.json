@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-14",
+  "probe": "tests/memory_object_probe.cpp",
+  "scope": "Compile-only parameterized construction and reset of PackageWorkspace, OutdoorPackage, TerrainReader and GraphReader; no physical PSRAM measurements",
+  "flags": "-std=gnu++17 -Os -fno-exceptions -fno-rtti -fstack-usage -Iinclude -c",
+  "targets": [
+    {"compiler": "xtensa-esp32s3-elf-g++ 14.2", "max_single_function_frame_bytes": 32},
+    {"compiler": "riscv32-esp-elf-g++ 14.2", "extra_flags": "-march=rv32imc -mabi=ilp32", "max_single_function_frame_bytes": 32}
+  ],
+  "limitations": "Excludes call-chain stack totals, provider stack/metadata, firmware linking and runtime peak; recompile the probe when constructors or convenience code change"
+}

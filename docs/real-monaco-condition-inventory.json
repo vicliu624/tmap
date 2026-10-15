@@ -1,0 +1,12 @@
+{
+  "source": "monaco-261013.osm.pbf",
+  "source_bytes": 692392,
+  "source_sha256": "32c409ec20a3449be6450e7e615a9d575dd7808e7326a8d087d3f4128b394a05",
+  "entities": {
+    "node": 41708,
+    "way": 6249,
+    "relation": 348
+  },
+  "conditions": [],
+  "scope": "Raw tag inventory from immutable local snapshot; occurrence is not proof of routable relevance or supported grammar."
+}

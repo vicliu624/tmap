@@ -1,0 +1,43 @@
+{
+  "scope": "New optional integer label-scan Dijkstra, no retained queue array. Actual host payload and deterministic work/read counts, not MCU peaks/timing/energy. Monaco exact queued-order comparison at identical capacities, both cache/retry profiles; real conditional country and mountain/clipped route statistics/maneuvers. Host PSRAM provider is a policy/failure simulation, not a physical PSRAM measurement.",
+  "monaco_queue_free_comparisons": 16,
+  "monaco_cache_busy_comparisons": 80,
+  "country_queue_free_comparisons": 160,
+  "input_reports": {
+    "real-monaco-label-scan-native-evidence.json": "7b3723329e8d1d36a95cbba73fda3f2761e0e2210409ac5bd10e20c75914f8ac",
+    "real-monaco-label-scan-small-evidence.json": "89e91d81009cd1727389c7f59bc828e46abd6a89ceab2cb3ca8cbf55c8d47f48",
+    "real-everest-label-scan-native-evidence.json": "3d52d013fe7736d2fda2a53981efa15f12f75f8c5168edcbee8406455615dc0b",
+    "real-everest-label-scan-small-evidence.json": "55a475216137a2dc9ff75704345be67fe37fe98103e24ad4f67a6d46979a0cc8",
+    "real-liechtenstein-label-scan-native-evidence.json": "becec04344bbf15563ec3db35f0d8387b231d25df10d427d9d9e63889308361a",
+    "real-liechtenstein-label-scan-small-evidence.json": "cfdd25a5fd24c41f28b0870476e819c1bd222bfa667a5bbbdc19618bf16fc79d"
+  },
+  "sources": {
+    "include/tmap/integer_route.h": "a2d95fe59d25f565db620befc93a528cc686905bea4dee9f1f704076731a5ee2",
+    "include/tmap/route_storage.h": "dd815e576a08b8e25f9b16617e9b41d4b9be74f88a462c7e7eec64dcff377ea3",
+    "include/tmap/resource_budget.h": "f45e432d62dddcb675bcf8b4acbfa3b06a3af52c82ada8f3b18caf1b1b8c6c86",
+    "src/integer_route.cpp": "8e6423513e005fe61d686238891ea491e107fc5d6909bf9129f9dbb111f8c62f",
+    "src/integer_coordinate_route.cpp": "0e069458b985a031a976eccafa2fd341765ba80e075786f2181e2668c2afae3b",
+    "src/integer_prepared_route.cpp": "cc6a7bb3647f7802e1baf37cb315228dfe1dbd7b23488b6c3ef8c58aca9b3e1c",
+    "src/resource_budget.cpp": "554ee69eb900ba3e33cf4e16004bd4249b20efc533cdc6398e93a02aa3ef4d7c",
+    "tests/test_integer_route.cpp": "feb41e0a6f676f01b6db6a24ba16b9dddcee81b5b7530a61e8c57179bf74ad1a",
+    "tests/test_package.cpp": "84fc3d3ea5f45098d94fa704080f1530fda833176958920ca93f78716a069b9e",
+    "tests/test_route_storage.cpp": "a1720840fd3e3eaca8a06fc7b220db382bac4ab55a34f0203413f21542d6eae0",
+    "tests/test_resource_budget.cpp": "26a64f0b46a8fc15e3196ac171b533d9ebc0a2fa0d4a49c1005c49ef6a3751a4",
+    "examples/navigation_resource_probe.cpp": "e6452653fe1d95b27d4092cc330c283793b84dff1526ce9c9b99586c5a9b56d6",
+    "examples/runtime_navigation_probe.cpp": "4c5f961d86e2e60f3f2572da4040081a73b2976fc39a0741d646f5beeda1c308",
+    "examples/integer_coordinate_resource_probe.cpp": "93653b9c622a8ba8b1268463967616e025c8aa79d96dcd8c739fb1f00d873616",
+    "tools/collect_label_scan_evidence.py": "1020ed148ad5cd6e7cffd4aca22abe78ea212f047565b9672417d43f85e21889"
+  },
+  "test_executables": {
+    "independent_reference": "50bbafc95bc156775892c5e77a4865f7ff0f45ecf206ce3769475bd30cc30a68",
+    "combined_rules": "0795eefd6a51007d11b9cf43933414bde2c7f6de581863942736de2bdabda68e",
+    "psram_ownership": "21a27fe6d171b610593fcfa933eae799654d3d237a4c993a7b3895d549015f45",
+    "resource_budget": "d4e12e2b2905dffb6dd19f6731a485dc8a8af2216534fe9c6117c4d8f35afc07"
+  },
+  "test_outputs": {
+    "independent_reference": "LABEL_SCAN_CANCEL unpublished=1 other_algorithms_require_queue=4\nPASS Bellman references and bounded via-history routing; label=24 arrays256=7168 cursor=184\n",
+    "combined_rules": "EDGE rule_reader=584\nPROGRAM read_cursor=176 ranges=112\nDYNAMIC routes=32 snaps=4\nCOORDINATE cases=64\nBARRIER cases=48 reader=584\nBARRIER invalid=5\nTURN_PAGED cursor=96 ranges=32\nTURN_CONTEXT cases=48 reader=456\nTURN_ROUTES cases=32 binding=24\nTURN_CLIPPED cases=96\nTURN_GROUPED_ROUTES cases=128\nTURN_GROUPED cases=60 invalid=9\nCOMBINED_RULES cases=128\nLABEL_SCAN_COMBINED cases=16\nGRAPH reader=296 info=28\nPASS bounded open, chunked-directory CRC, multi-page read, Busy, cancellation; workspace=9504 package=200 read_cursor=40\n",
+    "psram_ownership": "LABEL_SCAN_STORAGE owner=76 queue_free_bytes=208 queued_bytes=240 external_allocations=2 rollback_points=2\nPASS all three allocation failure rollback points, retry, shared slice budget, hidden partial arrays, preflight limit, cancel/reset\n",
+    "resource_budget": "PASS exact ABI/profile budget, retained concurrent services, invalid combinations, multiplication/sum overflow\nroute_elevation_cursor=192 output=24\ninteger_route_elevation_cursor=112 output=24\ninteger_prefix_cursor=120 output=8\ninteger_interval_cursor=176 output=24\ninteger_endpoint_cursor=472 output=112 leg=12\ninteger_direct_cursor=288 output=24\ninteger_prepared_cursor=584 endpoint_output=112\ninteger_geometry_cursor=272\ninteger_leg_elevation_cursor=312\ninteger_coordinate_cursor=936 snap_cursor=576\ninteger_conversion_cursor=152 integer_maneuver_cursor=280\nhistory_graph_reader=296 integer_route_cursor=184 integer_label=24 float_label=32\n"
+  }
+}

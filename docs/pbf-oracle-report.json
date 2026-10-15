@@ -1,0 +1,13 @@
+{
+  "file_bytes": 692392,
+  "sha256": "32c409ec20a3449be6450e7e615a9d575dd7808e7326a8d087d3f4128b394a05",
+  "oracle": "pyosmium 4.3.1",
+  "counts": {
+    "node": 41708,
+    "way": 6249,
+    "relation": 348
+  },
+  "result": "all IDs, E7 coordinates, tags, ordered way references and relation members match",
+  "scope": "host PBF decoding; not MCU resource measurement or routing-rule coverage",
+  "source": "https://download.geofabrik.de/europe/monaco-261013.osm.pbf"
+}

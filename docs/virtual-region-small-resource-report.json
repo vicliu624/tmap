@@ -1,0 +1,51 @@
+{
+  "format": "tmap-virtual-graph-v1",
+  "page_bytes": 1024,
+  "virtual_bytes": 10240,
+  "virtual_sha256": "04a95c0137d6b81149c045e40a105863bf24d826c50bf53144d78c96dca068d6",
+  "topology_epoch": "virtual-test-v1",
+  "sources": [
+    {
+      "bytes": 10240,
+      "sha256": "ab0a4da10a8f4ab1975a6693218575070ffb634318da2bb7f6c383d84698d6de"
+    },
+    {
+      "bytes": 9216,
+      "sha256": "7ef25e39c6ba25285c9eb3ebfbae8fb5cc0aba0c1fc07ef5a85e7bf8353676c6"
+    },
+    {
+      "bytes": 8192,
+      "sha256": "9497cff3b6dca6a1238425f40b601d01344a28c4a1876f43833f6207fa8253f6"
+    }
+  ],
+  "extents": [
+    {
+      "source": 2,
+      "virtual_offset": 0,
+      "source_offset": 0,
+      "bytes": 6144
+    },
+    {
+      "source": 0,
+      "virtual_offset": 6144,
+      "source_offset": 6144,
+      "bytes": 1024
+    },
+    {
+      "source": 2,
+      "virtual_offset": 7168,
+      "source_offset": 6144,
+      "bytes": 2048
+    },
+    {
+      "source": 0,
+      "virtual_offset": 9216,
+      "source_offset": 9216,
+      "bytes": 1024
+    }
+  ],
+  "reused_bytes": 2048,
+  "patch_bytes": 8192,
+  "scope": "graph-only; remapped node/edge/turn records; no DEM/administration/contour merging",
+  "extent_count": 4
+}

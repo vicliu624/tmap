@@ -1,0 +1,411 @@
+{
+  "label": "esp32c3-label-scan",
+  "date": "2026-10-15",
+  "configuration": {
+    "CMAKE_BUILD_TYPE": "MinSizeRel",
+    "CMAKE_CXX_FLAGS": "-march=rv32imc -mabi=ilp32",
+    "CMAKE_CXX_FLAGS_MINSIZEREL": "-Os -DNDEBUG",
+    "TMAP_NATIVE_FILE": "OFF",
+    "TMAP_BUILD_EXAMPLES": "OFF",
+    "TMAP_BUILD_TESTS": "OFF",
+    "TMAP_EMBEDDED_CHECKS": "ON",
+    "TMAP_CACHE_PAGE_BYTES": "1024",
+    "TMAP_PACKAGE_CACHE_PAGES": "2",
+    "TMAP_PACKAGE_SECTION_SLOTS": "64"
+  },
+  "stack": {
+    "new_core_max_frame": 240,
+    "limit": 240,
+    "legacy_max_frame": 272,
+    "violations": []
+  },
+  "limitations": "Local compiler/test evidence; no MCU execution, linked firmware flash delta, task stack high-water or device latency measurement.",
+  "undefined_symbols": [
+    "_ZN4tmap10cancelReadERNS_10ReadCursorE",
+    "_ZN4tmap10routeEdgesERKNS_11RouteCursorEPmjRj",
+    "_ZN4tmap11GraphReader10initializeEv",
+    "_ZN4tmap11GraphReader11turnAllowedEmmNS_10TravelModeERb",
+    "_ZN4tmap11GraphReader12ascentPrefixEmdRd",
+    "_ZN4tmap11GraphReader13descentPrefixEmdRd",
+    "_ZN4tmap11GraphReader15routeTransitionEmmNS_10TravelModeERbRm",
+    "_ZN4tmap11GraphReader15validateRoutingENS_10TravelModeE",
+    "_ZN4tmap11GraphReader4edgeEmRNS_9GraphEdgeE",
+    "_ZN4tmap11GraphReader4nodeEmRNS_9GraphNodeE",
+    "_ZN4tmap11GraphReader5pointERKNS_9GraphEdgeEmRNS_8GeoPointE",
+    "_ZN4tmap11clipSegmentEffRNS_11ScreenPointES1_",
+    "_ZN4tmap11contourStepERNS_14OutdoorPackageERNS_13ContourCursorEjPFbPvRKNS_13ContourVertexEES4_",
+    "_ZN4tmap13CompositeFile4bindEPKNS_10FileExtentEjj",
+    "_ZN4tmap13CompositeFile6detachEv",
+    "_ZN4tmap13CompositeFile6readAtEyPhj",
+    "_ZN4tmap13TerrainReader10initializeEv",
+    "_ZN4tmap13beginContoursERNS_14OutdoorPackageERKNS_6BoundsEhRNS_13ContourCursorE",
+    "_ZN4tmap13contourPolicyEh",
+    "_ZN4tmap13roadRulesStepERNS_14RoadRuleCursorEjRNS_9RoadMasksE",
+    "_ZN4tmap13turnRulesStepERNS_14TurnRuleCursorEjRh",
+    "_ZN4tmap14EdgeRuleReader4readEmhRh",
+    "_ZN4tmap14OutdoorPackage4openERNS_16RandomAccessFileEj",
+    "_ZN4tmap14OutdoorPackage4readENS_11SectionTypeEyPhj",
+    "_ZN4tmap14OutdoorPackage5closeEv",
+    "_ZN4tmap14OutdoorPackage6recordENS_11SectionTypeEyjPh",
+    "_ZN4tmap14beginRoadRulesERNS_16RandomAccessFileERKSt5arrayINS_13RoadRuleRangeELj7EEylhhRNS_14RoadRuleCursorEmPFyPvES9_",
+    "_ZN4tmap14beginTurnRulesERNS_16RandomAccessFileERKSt5arrayINS_13RoadRuleRangeELj2EEylRNS_14TurnRuleCursorEmPFyPvES9_",
+    "_ZN4tmap14distanceMetersENS_8GeoPointES0_",
+    "_ZN4tmap15integerEdgeCostEmmbNS_11AscentRatioERy",
+    "_ZN4tmap15legGeometryStepERNS_11GraphReaderERNS_17LegGeometryCursorEjPFbPvNS_8GeoPointEES4_",
+    "_ZN4tmap16beginLegGeometryERNS_11GraphReaderEPKNS_8RouteLegEjRNS_17LegGeometryCursorE",
+    "_ZN4tmap16fileIdentityStepERNS_18FileIdentityCursorEj",
+    "_ZN4tmap16integerRouteStepERNS_11GraphReaderERNS_18IntegerRouteCursorEj",
+    "_ZN4tmap17TurnContextReader4readEmmhmRbmm",
+    "_ZN4tmap17beginFileIdentityERNS_16RandomAccessFileERKNS_12FileIdentityERNS_18FileIdentityCursorEyPFyPvES7_",
+    "_ZN4tmap17beginTurnDecisionEhmRNS_18TurnDecisionCursorE",
+    "_ZN4tmap17calendarRulesStepERNS_18CalendarRuleCursorEjRNS_18CalendarRuleResultE",
+    "_ZN4tmap17turnDecisionMatchERNS_18TurnDecisionCursorEyhmhmb",
+    "_ZN4tmap18PackageSectionFile14discardPendingEv",
+    "_ZN4tmap18PackageSectionFile5epochEPv",
+    "_ZN4tmap18PackageSectionFileC1ERNS_14OutdoorPackageENS_11SectionTypeE",
+    "_ZN4tmap18beginCalendarRulesERNS_16RandomAccessFileEymylmRNS_18CalendarRuleCursorEmPFyPvES4_m",
+    "_ZN4tmap18decodeTurnRelationEPKhjyyRNS_12TurnRelationE",
+    "_ZN4tmap18finishTurnDecisionERNS_18TurnDecisionCursorERb",
+    "_ZN4tmap18readRoutingProfileERNS_14OutdoorPackageERNS_14RoutingProfileE",
+    "_ZN4tmap19checkRoutingProfileERKNS_14RoutingProfileEylm",
+    "_ZN4tmap19integerEndpointStepERNS_11GraphReaderERNS_21IntegerEndpointCursorEjRNS_25IntegerEndpointCandidatesE",
+    "_ZN4tmap19resolveTurnPropertyEmmRh",
+    "_ZN4tmap19roadProgramReadStepERNS_14OutdoorPackageERNS_21RoadProgramReadCursorEjRSt5arrayINS_13RoadRuleRangeELj7EERhRb",
+    "_ZN4tmap19turnProgramReadStepERNS_14OutdoorPackageERNS_21TurnProgramReadCursorEjRSt5arrayINS_13RoadRuleRangeELj2EERh",
+    "_ZN4tmap20beginIntegerEndpointERNS_11GraphReaderERKNS_4SnapEbNS_10TravelModeENS_11AscentRatioERNS_21IntegerEndpointCursorE",
+    "_ZN4tmap20beginRoadProgramReadERNS_14OutdoorPackageEmRNS_21RoadProgramReadCursorEm",
+    "_ZN4tmap20beginTurnProgramReadERNS_14OutdoorPackageEmRNS_21TurnProgramReadCursorEm",
+    "_ZN4tmap21integerAccumulateCostEyyRy",
+    "_ZN4tmap22decodeTurnContextMatchEPKhjymRNS_16TurnContextMatchE",
+    "_ZN4tmap22integerDirectRouteStepERNS_11GraphReaderERNS_19IntegerDirectCursorEjRNS_18IntegerDirectRouteE",
+    "_ZN4tmap22resolveRoadPermissionsERKNS_15RoadPermissionsEhhRNS_9RoadMasksE",
+    "_ZN4tmap23beginIntegerDirectRouteERNS_11GraphReaderERKNS_25IntegerEndpointCandidatesES4_NS_10TravelModeENS_11AscentRatioERNS_19IntegerDirectCursorE",
+    "_ZN4tmap23integerEdgeIntervalStepERNS_11GraphReaderERNS_25IntegerEdgeIntervalCursorEjRNS_19IntegerEdgeIntervalE",
+    "_ZN4tmap24beginIntegerEdgeIntervalERNS_11GraphReaderEmmmNS_11AscentRatioERNS_25IntegerEdgeIntervalCursorE",
+    "_ZN4tmap24beginRouteWithBoundariesERNS_11GraphReaderEmmmmRKNS_12RouteOptionsENS_14RouteWorkspaceERNS_11RouteCursorE",
+    "_ZN4tmap24integerLegConversionStepERNS_11GraphReaderERNS_26IntegerLegConversionCursorEj",
+    "_ZN4tmap24integerPreparedRouteStepERNS_11GraphReaderERNS_26IntegerPreparedRouteCursorEj",
+    "_ZN4tmap24validateTurnContextMatchERKNS_16TurnContextMatchERKNS_12TurnRelationEm",
+    "_ZN4tmap25beginIntegerLegConversionERNS_11GraphReaderERKNS_15IntegerRouteLegERNS_26IntegerLegConversionCursorE",
+    "_ZN4tmap25beginIntegerPreparedRouteERNS_11GraphReaderERKNS_25IntegerEndpointCandidatesES4_NS_19IntegerRouteOptionsENS_21IntegerRouteWorkspaceEPNS_15IntegerRouteLegEjRNS_26IntegerPreparedRouteCursorE",
+    "_ZN4tmap25evaluateCalendarPredicateERKNS_17CalendarPredicateEylRb",
+    "_ZN4tmap26integerPreparedRouteResultERKNS_26IntegerPreparedRouteCursorERPKNS_15IntegerRouteLegERjRy",
+    "_ZN4tmap31beginIntegerRouteWithBoundariesERNS_11GraphReaderEmmmmNS_19IntegerRouteOptionsENS_21IntegerRouteWorkspaceERNS_18IntegerRouteCursorE",
+    "_ZN4tmap6Reader22administrativeLocationEyPcjRhS2_",
+    "_ZN4tmap6Reader3rowEmyjPh",
+    "_ZN4tmap6Reader4findERKNS_7SectionENS0_7KeyKindEPKhjyPhj",
+    "_ZN4tmap6Reader4pageERKNS_7SectionEyRPKh",
+    "_ZN4tmap6Reader6crc32cEPKhj",
+    "_ZN4tmap6Reader6stringEyPcjm",
+    "_ZN4tmap6Reader7readPoiEyRNS_3PoiE",
+    "_ZN4tmap6Sha2565resetEv",
+    "_ZN4tmap6Sha2566finishERSt5arrayIhLj32EE",
+    "_ZN4tmap6Sha2566updateEPKhj",
+    "_ZN4tmap6cancelERNS_14RoadRuleCursorE",
+    "_ZN4tmap6cancelERNS_14TurnRuleCursorE",
+    "_ZN4tmap6cancelERNS_18CalendarRuleCursorE",
+    "_ZN4tmap6cancelERNS_18FileIdentityCursorE",
+    "_ZN4tmap6cancelERNS_18IntegerRouteCursorE",
+    "_ZN4tmap6cancelERNS_18TurnDecisionCursorE",
+    "_ZN4tmap6cancelERNS_19IntegerDirectCursorE",
+    "_ZN4tmap6cancelERNS_21RoadProgramReadCursorE",
+    "_ZN4tmap6cancelERNS_21TurnProgramReadCursorE",
+    "_ZN4tmap6cancelERNS_25IntegerEdgeIntervalCursorE",
+    "_ZN4tmap6detail17packageStorageAbiEPNS0_17PackageStorageAbiILj1024ELj2ELj64EEE",
+    "_ZN4tmap7convertENS_6StatusE",
+    "_ZN4tmap7projectERKNS_11MapViewportENS_8GeoPointERNS_11ScreenPointE",
+    "_ZN4tmap8readStepERNS_14OutdoorPackageERNS_10ReadCursorEj",
+    "_ZN4tmap8snapStepERNS_11GraphReaderERNS_10SnapCursorEj",
+    "_ZN4tmap9beginReadERNS_14OutdoorPackageENS_11SectionTypeEyPhjRNS_10ReadCursorE",
+    "_ZN4tmap9beginSnapERNS_11GraphReaderENS_8GeoPointENS_10TravelModeEdRNS_10SnapCursorE",
+    "_ZN4tmap9routeStepERNS_11GraphReaderERNS_11RouteCursorEj",
+    "_ZNK4tmap11GraphReader12validRuntimeEv",
+    "_ZNK4tmap11GraphReader9turnRulesEv",
+    "_ZNK4tmap14OutdoorPackage7sectionENS_11SectionTypeE",
+    "_ZNK4tmap17TurnContextReader8validForERKNS_14OutdoorPackageEyl",
+    "_ZNK4tmap6Bounds10intersectsERKS0_",
+    "_ZNK4tmap6Bounds8containsEll",
+    "_ZNK4tmap6Reader7sectionEm",
+    "_ZNK4tmap6Reader8poiCountEv",
+    "_ZdlPvj",
+    "__adddf3",
+    "__addsf3",
+    "__ashldi3",
+    "__divdf3",
+    "__divdi3",
+    "__divsf3",
+    "__eqdf2",
+    "__eqsf2",
+    "__extendsfdf2",
+    "__fixsfdi",
+    "__fixsfsi",
+    "__fixunsdfsi",
+    "__floatdisf",
+    "__floatsidf",
+    "__floatsisf",
+    "__floatundidf",
+    "__floatunsidf",
+    "__floatunsisf",
+    "__gedf2",
+    "__gtdf2",
+    "__gtsf2",
+    "__ledf2",
+    "__lesf2",
+    "__lshrdi3",
+    "__ltdf2",
+    "__ltsf2",
+    "__muldf3",
+    "__mulsf3",
+    "__nedf2",
+    "__subdf3",
+    "__subsf3",
+    "__truncdfsf2",
+    "__udivdi3",
+    "__umoddi3",
+    "__unorddf2",
+    "__unordsf2",
+    "asin",
+    "asinhf",
+    "atan2f",
+    "atanf",
+    "ceil",
+    "ceilf",
+    "cos",
+    "cosf",
+    "floorf",
+    "fmax",
+    "fmin",
+    "ldexpf",
+    "llround",
+    "log1pf",
+    "lroundf",
+    "memchr",
+    "memcmp",
+    "memcpy",
+    "memset",
+    "remainderf",
+    "sin",
+    "sinf",
+    "sinhf",
+    "sqrt",
+    "strcmp",
+    "strlen",
+    "strstr",
+    "tanf"
+  ],
+  "forbidden_dependencies": [],
+  "nm_tool": "riscv32-esp-elf-nm.exe",
+  "archive_objects": [
+    {
+      "object": "reader.cpp.obj",
+      "text": 13720,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "search.cpp.obj",
+      "text": 5822,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "package.cpp.obj",
+      "text": 4819,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "terrain.cpp.obj",
+      "text": 9068,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "navigation.cpp.obj",
+      "text": 17632,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "coordinate_route.cpp.obj",
+      "text": 4336,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "contour_renderer.cpp.obj",
+      "text": 1692,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "administration.cpp.obj",
+      "text": 3446,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "legacy_administration.cpp.obj",
+      "text": 3204,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "resource_budget.cpp.obj",
+      "text": 1942,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "integer_cost.cpp.obj",
+      "text": 208,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "integer_route.cpp.obj",
+      "text": 3914,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "outdoor_session.cpp.obj",
+      "text": 1552,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "composite_file.cpp.obj",
+      "text": 818,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "sha256.cpp.obj",
+      "text": 1314,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "file_identity.cpp.obj",
+      "text": 670,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "virtual_map.cpp.obj",
+      "text": 2255,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "routing_profile.cpp.obj",
+      "text": 494,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "route_elevation.cpp.obj",
+      "text": 1974,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "integer_route_elevation.cpp.obj",
+      "text": 496,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "integer_elevation.cpp.obj",
+      "text": 1704,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "integer_endpoint.cpp.obj",
+      "text": 2076,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "integer_prepared_route.cpp.obj",
+      "text": 1726,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "integer_geometry.cpp.obj",
+      "text": 2074,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "integer_leg_elevation.cpp.obj",
+      "text": 698,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "integer_coordinate_route.cpp.obj",
+      "text": 1666,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "integer_maneuvers.cpp.obj",
+      "text": 1674,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "route_history.cpp.obj",
+      "text": 1326,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "calendar_condition.cpp.obj",
+      "text": 826,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "calendar_rules.cpp.obj",
+      "text": 1182,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "road_rules.cpp.obj",
+      "text": 1967,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "section_file.cpp.obj",
+      "text": 500,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "edge_rules.cpp.obj",
+      "text": 1781,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "turn_rules.cpp.obj",
+      "text": 2878,
+      "data": 0,
+      "bss": 0
+    },
+    {
+      "object": "turn_context.cpp.obj",
+      "text": 2600,
+      "data": 0,
+      "bss": 0
+    }
+  ],
+  "size_tool": "riscv32-esp-elf-size.exe"
+}

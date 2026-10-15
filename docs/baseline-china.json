@@ -1,0 +1,14 @@
+{
+  "arguments": [
+    "C:/Users/vicliu/Projects/trail-mate-center/artifacts/tmap/osm/china-osm-z8-12.tmap",
+    "12",
+    "102.7",
+    "25.04"
+  ],
+  "output": "file=29837557760 offset=21634830336 tile=12/3216/1753 crc=a4e01293 codec=1 workspace=14024 reader=120 pois=423968\nannotation 昆明市 25.0399407 102.7169189\nannotation 官渡区 25.0178343 102.7418518\nannotation 五华区 25.0464532 102.7058105\nannotations=42 page_reads=183\nsearch 昆明市 25.0399407 102.7169189\nsearch 昆明湖 24.7952864 120.9929504\nsearch 昆明湖 34.1533130 108.8873901\nsearch_matches=6 search_steps=1 cursor=856\n",
+  "identical": true,
+  "baseline_median_ms": 30.71510000154376,
+  "standalone_median_ms": 30.95639997627586,
+  "note": "Host process timing includes startup and file cache; does not establish ESP latency.",
+  "runs": 5
+}

@@ -1,0 +1,29 @@
+{
+  "source": {
+    "identity": "Natural Earth 1:110m countries; https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+    "sha256": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f"
+  },
+  "package_bytes": 7168,
+  "features": 2,
+  "queries": [
+    {
+      "longitude": 102.7,
+      "latitude": 25.04,
+      "path": "China",
+      "output": "region=China depth=1 approximate=0 boundary=0 result=ok reads=8 bytes=6656 operations=240"
+    },
+    {
+      "longitude": 116.4,
+      "latitude": 39.9,
+      "path": "China",
+      "output": "region=China depth=1 approximate=0 boundary=0 result=ok reads=8 bytes=6656 operations=240"
+    },
+    {
+      "longitude": -0.12,
+      "latitude": 51.5,
+      "path": "",
+      "output": "region= depth=0 approximate=0 boundary=0 result=missing reads=3 bytes=1536 operations=1"
+    }
+  ],
+  "limits": "Cold desktop file queries; no MCU timing/power/RAM peak proof. Coarse Natural Earth source is not a legal boundary or detailed district dataset."
+}

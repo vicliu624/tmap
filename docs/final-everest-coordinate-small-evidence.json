@@ -1,0 +1,5287 @@
+{
+  "package_sha256": "65ed9ebb4588cfd64b468348d5c9f86da24ece2cce7d491041d27696f6f5d151",
+  "probe_sha256": "a317a40db2b01f049f02685b8530d1e4ad75fb6da25914462e5a12eebdbaf54c",
+  "cases": [
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "fifo",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1720,
+        "read_attempts": 57,
+        "successful_bytes": 56896,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 57
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "fifo",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1776,
+        "read_attempts": 113,
+        "successful_bytes": 56896,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 113
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "linear",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1722,
+        "read_attempts": 57,
+        "successful_bytes": 56896,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 57
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "linear",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1778,
+        "read_attempts": 113,
+        "successful_bytes": 56896,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 113
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "heap",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1711,
+        "read_attempts": 57,
+        "successful_bytes": 56896,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 57
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "heap",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1767,
+        "read_attempts": 113,
+        "successful_bytes": 56896,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 113
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "alt",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1715,
+        "read_attempts": 72,
+        "successful_bytes": 72256,
+        "library_payload_bytes": 11172,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 72
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "alt",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1786,
+        "read_attempts": 143,
+        "successful_bytes": 72256,
+        "library_payload_bytes": 11172,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 143
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "label-scan",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 2735,
+        "read_attempts": 57,
+        "successful_bytes": 56896,
+        "library_payload_bytes": 10016,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 57
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "label-scan",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 2791,
+        "read_attempts": 113,
+        "successful_bytes": 56896,
+        "library_payload_bytes": 10016,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 113
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "fifo",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1781,
+        "read_attempts": 74,
+        "successful_bytes": 74304,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 74
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "fifo",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1854,
+        "read_attempts": 147,
+        "successful_bytes": 74304,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 147
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "linear",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1783,
+        "read_attempts": 74,
+        "successful_bytes": 74304,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 74
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "linear",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1856,
+        "read_attempts": 147,
+        "successful_bytes": 74304,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 147
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "heap",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1772,
+        "read_attempts": 74,
+        "successful_bytes": 74304,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 74
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "heap",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1845,
+        "read_attempts": 147,
+        "successful_bytes": 74304,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 147
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "alt",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1776,
+        "read_attempts": 89,
+        "successful_bytes": 89664,
+        "library_payload_bytes": 11172,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 89
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "alt",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1864,
+        "read_attempts": 177,
+        "successful_bytes": 89664,
+        "library_payload_bytes": 11172,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 177
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "label-scan",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 2796,
+        "read_attempts": 74,
+        "successful_bytes": 74304,
+        "library_payload_bytes": 10016,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 74
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "label-scan",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 5151.18,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 5416.49,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 2869,
+        "read_attempts": 147,
+        "successful_bytes": 74304,
+        "library_payload_bytes": 10016,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 147
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "fifo",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1585,
+        "read_attempts": 59,
+        "successful_bytes": 58944,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 59
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "fifo",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1643,
+        "read_attempts": 117,
+        "successful_bytes": 58944,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 117
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "linear",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1615,
+        "read_attempts": 59,
+        "successful_bytes": 58944,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 59
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "linear",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1673,
+        "read_attempts": 117,
+        "successful_bytes": 58944,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 117
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "heap",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1576,
+        "read_attempts": 59,
+        "successful_bytes": 58944,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 59
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "heap",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1634,
+        "read_attempts": 117,
+        "successful_bytes": 58944,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 117
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "alt",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1543,
+        "read_attempts": 72,
+        "successful_bytes": 72256,
+        "library_payload_bytes": 11172,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 72
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "alt",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1614,
+        "read_attempts": 143,
+        "successful_bytes": 72256,
+        "library_payload_bytes": 11172,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 143
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "label-scan",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 3496,
+        "read_attempts": 59,
+        "successful_bytes": 58944,
+        "library_payload_bytes": 10016,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 59
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "label-scan",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 3554,
+        "read_attempts": 117,
+        "successful_bytes": 58944,
+        "library_payload_bytes": 10016,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 117
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "fifo",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1638,
+        "read_attempts": 76,
+        "successful_bytes": 76352,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 76
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "fifo",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1713,
+        "read_attempts": 151,
+        "successful_bytes": 76352,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 151
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "linear",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1656,
+        "read_attempts": 76,
+        "successful_bytes": 76352,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 76
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "linear",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1731,
+        "read_attempts": 151,
+        "successful_bytes": 76352,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 151
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "heap",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1626,
+        "read_attempts": 76,
+        "successful_bytes": 76352,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 76
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "heap",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1701,
+        "read_attempts": 151,
+        "successful_bytes": 76352,
+        "library_payload_bytes": 10528,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 151
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "alt",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1604,
+        "read_attempts": 89,
+        "successful_bytes": 89664,
+        "library_payload_bytes": 11172,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 89
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "alt",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1692,
+        "read_attempts": 177,
+        "successful_bytes": 89664,
+        "library_payload_bytes": 11172,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 177
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "label-scan",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 3162,
+        "read_attempts": 76,
+        "successful_bytes": 76352,
+        "library_payload_bytes": 10016,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 76
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "label-scan",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "maneuver_oracle": [
+        {
+          "kind": 0,
+          "point": [
+            279792305,
+            869049103
+          ],
+          "distance_m": 0.0,
+          "name_id": 0
+        },
+        {
+          "kind": 3,
+          "point": [
+            279789478,
+            869049979
+          ],
+          "distance_m": 32.59,
+          "name_id": 0
+        },
+        {
+          "kind": 2,
+          "point": [
+            279797420,
+            869025072
+          ],
+          "distance_m": 297.9,
+          "name_id": 0
+        },
+        {
+          "kind": 5,
+          "point": [
+            279969860,
+            868718501
+          ],
+          "distance_m": 5449.08,
+          "name_id": 0
+        }
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 3237,
+        "read_attempts": 151,
+        "successful_bytes": 76352,
+        "library_payload_bytes": 10016,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 151
+      }
+    }
+  ],
+  "scope": "Real Center package and integer coordinate snap/endpoint/search/clipped statistics. Independent packed-profile arithmetic; cross-algorithm cost equality is not an independent optimality proof. Fixed 128 states/legs and host ABI. No physical MCU peak, allocator/application overhead or surveyed accuracy claim."
+}

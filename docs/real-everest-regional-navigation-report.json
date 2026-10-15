@@ -1,0 +1,770 @@
+{
+  "center_package_sha256": "65ed9ebb4588cfd64b468348d5c9f86da24ece2cce7d491041d27696f6f5d151",
+  "virtual_manifest": {
+    "format": "tmap-virtual-graph-v1",
+    "page_bytes": 1024,
+    "virtual_bytes": 1363968,
+    "virtual_sha256": "49257a1b401e128f4153268e94f780af32ea279be6dad0fe1fcefb432321bea2",
+    "topology_epoch": "osm-api-everest-20261014-dem-skadi-complete-static-v1-shared-terrain-v1",
+    "condition_snapshot": null,
+    "travel_modes": 1,
+    "sources": [
+      {
+        "bytes": 736256,
+        "sha256": "00b8dfe60665d2903cbf50f4b4f665480826c64b6b552f3d02bd0a133c3deff1"
+      },
+      {
+        "bytes": 657408,
+        "sha256": "df88c97cad67f72414bdd3895e48b43f579214a0304f0f606cd82249f80abe83"
+      },
+      {
+        "bytes": 1348608,
+        "sha256": "838877f287d66c4bee00a4f53e2aa4c5c1c1eb08a5551653e878467685bd3b07"
+      }
+    ],
+    "extents": [
+      {
+        "source": 2,
+        "virtual_offset": 0,
+        "source_offset": 0,
+        "bytes": 6144
+      },
+      {
+        "source": 0,
+        "virtual_offset": 6144,
+        "source_offset": 5120,
+        "bytes": 8192
+      },
+      {
+        "source": 2,
+        "virtual_offset": 14336,
+        "source_offset": 6144,
+        "bytes": 129024
+      },
+      {
+        "source": 0,
+        "virtual_offset": 143360,
+        "source_offset": 76800,
+        "bytes": 1024
+      },
+      {
+        "source": 2,
+        "virtual_offset": 144384,
+        "source_offset": 135168,
+        "bytes": 44032
+      },
+      {
+        "source": 0,
+        "virtual_offset": 188416,
+        "source_offset": 121856,
+        "bytes": 1024
+      },
+      {
+        "source": 2,
+        "virtual_offset": 189440,
+        "source_offset": 179200,
+        "bytes": 1148928
+      },
+      {
+        "source": 1,
+        "virtual_offset": 1338368,
+        "source_offset": 641024,
+        "bytes": 1024
+      },
+      {
+        "source": 2,
+        "virtual_offset": 1339392,
+        "source_offset": 1328128,
+        "bytes": 5120
+      },
+      {
+        "source": 1,
+        "virtual_offset": 1344512,
+        "source_offset": 646144,
+        "bytes": 3072
+      },
+      {
+        "source": 2,
+        "virtual_offset": 1347584,
+        "source_offset": 1333248,
+        "bytes": 15360
+      },
+      {
+        "source": 0,
+        "virtual_offset": 1362944,
+        "source_offset": 735232,
+        "bytes": 1024
+      }
+    ],
+    "reused_bytes": 15360,
+    "patch_bytes": 1348608,
+    "scope": "remapped graph; DEM mosaic with optional explicit bounded resampling; regional contour/admin geometry retained",
+    "outdoor_capabilities": {
+      "dem": true,
+      "contours": true,
+      "administration": false
+    },
+    "dem_resampling": null,
+    "administration_union": false,
+    "contour_stitching": "exact-E7-degree-two-v1",
+    "contour_noding": false,
+    "extent_count": 12
+  },
+  "binary_manifest_sha256": "d0fc2e8e424640749dc283ff076902ca27196ad0b3045ee4a2efbce487fdf4fc",
+  "probe_sha256": "358c7ab32d5335754bf3ccc96c8413bff3a22052a68f57e10a12f37fc797c1a8",
+  "cases": [
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "busy_every": 0,
+      "reference": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1764,
+        "read_attempts": 73,
+        "successful_bytes": 74304,
+        "library_payload_bytes": 16672,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 73
+      },
+      "verified_virtual": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 65952,
+        "read_attempts": 64258,
+        "successful_bytes": 4181680,
+        "library_payload_bytes": 17760,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": true,
+        "virtual_payload_bytes": 1088,
+        "extent_capacity": 12,
+        "verification_physical_reads": 64185,
+        "virtual_read_attempts": 73
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "busy_every": 2,
+      "reference": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1838,
+        "read_attempts": 149,
+        "successful_bytes": 76352,
+        "library_payload_bytes": 16672,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 149
+      },
+      "verified_virtual": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 130208,
+        "read_attempts": 128516,
+        "successful_bytes": 4183728,
+        "library_payload_bytes": 17760,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 5151.18,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 5416.49,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": true,
+        "virtual_payload_bytes": 1088,
+        "extent_capacity": 12,
+        "verification_physical_reads": 128366,
+        "virtual_read_attempts": 150
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "busy_every": 0,
+      "reference": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1620,
+        "read_attempts": 75,
+        "successful_bytes": 76352,
+        "library_payload_bytes": 16672,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 75
+      },
+      "verified_virtual": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 65808,
+        "read_attempts": 64260,
+        "successful_bytes": 4183728,
+        "library_payload_bytes": 17760,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": true,
+        "virtual_payload_bytes": 1088,
+        "extent_capacity": 12,
+        "verification_physical_reads": 64185,
+        "virtual_read_attempts": 75
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "busy_every": 2,
+      "reference": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1696,
+        "read_attempts": 153,
+        "successful_bytes": 78400,
+        "library_payload_bytes": 16672,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": false,
+        "virtual_payload_bytes": 0,
+        "extent_capacity": 0,
+        "verification_physical_reads": 0,
+        "virtual_read_attempts": 153
+      },
+      "verified_virtual": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 130066,
+        "read_attempts": 128520,
+        "successful_bytes": 4185776,
+        "library_payload_bytes": 17760,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ],
+        "maneuver_result": "ok",
+        "probe_event_storage_bytes": 4136,
+        "maneuvers": [
+          {
+            "kind": 0,
+            "point": [
+              279792305,
+              869049103
+            ],
+            "distance_m": 0.0,
+            "name_id": 0
+          },
+          {
+            "kind": 3,
+            "point": [
+              279789478,
+              869049979
+            ],
+            "distance_m": 32.59,
+            "name_id": 0
+          },
+          {
+            "kind": 2,
+            "point": [
+              279797420,
+              869025072
+            ],
+            "distance_m": 297.9,
+            "name_id": 0
+          },
+          {
+            "kind": 5,
+            "point": [
+              279969860,
+              868718501
+            ],
+            "distance_m": 5449.08,
+            "name_id": 0
+          }
+        ],
+        "virtual_mode": true,
+        "virtual_payload_bytes": 1088,
+        "extent_capacity": 12,
+        "verification_physical_reads": 128366,
+        "virtual_read_attempts": 154
+      }
+    }
+  ],
+  "scope": "Real Center OSM/HGT artifact partitioned into two overlapping terrain column crops and directed-edge groups by the SDK benchmark, not two independent Center exports. Actual verified multi-file/source/patch/virtual SHA then coordinate route/statistics/maneuvers. Host retained payload/physical reads, not MCU peaks or survey accuracy. Original input restriction-free; partial regional terrain is completed by the mosaic."
+}

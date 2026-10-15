@@ -1,0 +1,51 @@
+{
+  "format": "tmap-virtual-graph-v1",
+  "page_bytes": 4096,
+  "virtual_bytes": 40960,
+  "virtual_sha256": "a22a52de9628e42e971c67ff35c567702b65ab3d4dec53afe6150bbf9b29c97f",
+  "topology_epoch": "virtual-test-v1",
+  "sources": [
+    {
+      "bytes": 40960,
+      "sha256": "d4f3a08f31ea221ad8dd5c960c38bc4e97c186b07645e59029d687b96e9623bb"
+    },
+    {
+      "bytes": 36864,
+      "sha256": "d6d69a8c7b83b60e2a9ec9b546597c5f669a1dd899890fe031aa52eadcbda7eb"
+    },
+    {
+      "bytes": 32768,
+      "sha256": "c23bcf4ec9dde41d659681a872b0b0a0bf8e1e7c113b9fe65067da6589afa4ae"
+    }
+  ],
+  "extents": [
+    {
+      "source": 2,
+      "virtual_offset": 0,
+      "source_offset": 0,
+      "bytes": 24576
+    },
+    {
+      "source": 0,
+      "virtual_offset": 24576,
+      "source_offset": 24576,
+      "bytes": 4096
+    },
+    {
+      "source": 2,
+      "virtual_offset": 28672,
+      "source_offset": 24576,
+      "bytes": 8192
+    },
+    {
+      "source": 0,
+      "virtual_offset": 36864,
+      "source_offset": 36864,
+      "bytes": 4096
+    }
+  ],
+  "reused_bytes": 8192,
+  "patch_bytes": 32768,
+  "scope": "graph-only; remapped node/edge/turn records; no DEM/administration/contour merging",
+  "extent_count": 4
+}

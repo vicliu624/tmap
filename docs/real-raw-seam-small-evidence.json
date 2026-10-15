@@ -1,0 +1,772 @@
+{
+  "scope": "Original real Liechtenstein PBF: two explicitly selected actual OSM ways, not complete geographic extracts. Independent Center main/branch exports segment the shared node differently. Raw union Center export and verified source/patch package restore actual stable-ID connectivity. Naive graph union is a measured disconnected control. All four integer algorithms, both directions, cold cache/process and Busy every other physical read. No DEM or board measurements.",
+  "selection": {
+    "scope": "Two selected original OSM ways, independently imported/Center-exported; not complete geographic regions.",
+    "original_pbf_sha256": "07f3884fd1dbe647d6ff68ec3fc66725a77beb4b20eab792431fc4bc9ce8c97e",
+    "main_way": 6065793,
+    "branch_way": 1324063797,
+    "junction_node": 12252504377,
+    "start_osm_node": 49872407,
+    "destination_osm_node": 12252504378,
+    "main_source_sha256": "cbbefa86c80d448007abccac6933a7c4113eeae6b3e848bf2018e2858ecec259",
+    "branch_source_sha256": "2c30573fa61a56954fabb6a3cdeec9f9ef8be3e2a75fc874f8bc5ce4fb7874e9"
+  },
+  "selection_sha256": "b8c16b58169d7b4c9c55c63be6978752cba1fa3f1cb0e14773fd7b3113a2350d",
+  "probe_sha256": "1efbb1c65dec79618257cc2a5e8ba877b7d3c69388f0b1824dd6bbc3721d5991",
+  "center_manifests": {
+    "main": "5c1d11a1b668d9c1c1f2881a520cbb8edbe83c68d992ee1894f1f986ba7c105c",
+    "branch": "45d3dd4d03ebc6c352bbf3d4fd1a2b0e288068561e21aa9f2c54f92d6518b53d",
+    "union": "e95743ea85a1fd679f7ad1f6b2920b2cbccf6f5864d96b50de2f875354adf940"
+  },
+  "center_package_sha256": {
+    "main": "3111f0939f3c2dfc5600d614bd6303e2ddba8482f30c221b70996f6773293f25",
+    "branch": "cab7fc4f7fc9c07ff63f222764420e0e7db3cb6700568aa7da08eb8e6a6868e8",
+    "union": "ddd548004294225b661710e552736ef52170b6e4bdbf159d17bf7ddc60c54b58"
+  },
+  "virtual_manifest": {
+    "format": "tmap-virtual-graph-v1",
+    "page_bytes": 1024,
+    "virtual_bytes": 12288,
+    "virtual_sha256": "5b86345e112a25a5e3bfbbce8ec08c68baafce5d8587af2c124c83c1ee9fde60",
+    "topology_epoch": "real-selected-seam-07f3884fd1dbe647",
+    "condition_snapshot": null,
+    "travel_modes": 1,
+    "sources": [
+      {
+        "bytes": 12288,
+        "sha256": "3111f0939f3c2dfc5600d614bd6303e2ddba8482f30c221b70996f6773293f25"
+      },
+      {
+        "bytes": 11264,
+        "sha256": "cab7fc4f7fc9c07ff63f222764420e0e7db3cb6700568aa7da08eb8e6a6868e8"
+      },
+      {
+        "bytes": 10240,
+        "sha256": "16f3e0f9c158f6d9695bbd0949d0bef09cac6373aee46271874623c1e36ca45e"
+      }
+    ],
+    "extents": [
+      {
+        "source": 2,
+        "virtual_offset": 0,
+        "source_offset": 0,
+        "bytes": 8192
+      },
+      {
+        "source": 0,
+        "virtual_offset": 8192,
+        "source_offset": 8192,
+        "bytes": 1024
+      },
+      {
+        "source": 2,
+        "virtual_offset": 9216,
+        "source_offset": 8192,
+        "bytes": 2048
+      },
+      {
+        "source": 0,
+        "virtual_offset": 11264,
+        "source_offset": 11264,
+        "bytes": 1024
+      }
+    ],
+    "reused_bytes": 2048,
+    "patch_bytes": 10240,
+    "scope": "remapped graph; DEM mosaic with optional explicit bounded resampling; regional contour/admin geometry retained",
+    "outdoor_capabilities": {
+      "dem": false,
+      "contours": false,
+      "administration": false
+    },
+    "dem_resampling": null,
+    "administration_union": false,
+    "contour_stitching": "exact-E7-degree-two-v1",
+    "contour_noding": false,
+    "extent_count": 4,
+    "raw_seam_sources": [
+      {
+        "path": "C:\\Users\\vicliu\\Projects\\trail-mate-center\\artifacts\\navigation-source\\real-raw-seam-v1\\main.osm",
+        "bytes": 1300,
+        "sha256": "cbbefa86c80d448007abccac6933a7c4113eeae6b3e848bf2018e2858ecec259"
+      },
+      {
+        "path": "C:\\Users\\vicliu\\Projects\\trail-mate-center\\artifacts\\navigation-source\\real-raw-seam-v1\\branch.osm",
+        "bytes": 428,
+        "sha256": "2c30573fa61a56954fabb6a3cdeec9f9ef8be3e2a75fc874f8bc5ce4fb7874e9"
+      }
+    ],
+    "raw_source_groups": [
+      [
+        "C:\\Users\\vicliu\\Projects\\trail-mate-center\\artifacts\\navigation-source\\real-raw-seam-v1\\main.osm"
+      ],
+      [
+        "C:\\Users\\vicliu\\Projects\\trail-mate-center\\artifacts\\navigation-source\\real-raw-seam-v1\\branch.osm"
+      ]
+    ],
+    "raw_seam_policy": "Each original source group reproduces its regional graph; stable OSM union rebuilds junctions/restrictions before remapping. No proximity joins.",
+    "runtime_conditions": false,
+    "max_region_entities": 1000000,
+    "max_region_references": 8000000
+  },
+  "binary_manifest_sha256": "528d16e036c9d54963030294e8e0caa0c4e4c5f9209b1e94487b905f5d9041e3",
+  "cases": [
+    {
+      "kind": "naive",
+      "reverse": false,
+      "algorithm": 0,
+      "result": "no_path",
+      "steps": 51,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "naive",
+      "reverse": false,
+      "algorithm": 1,
+      "result": "no_path",
+      "steps": 54,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "naive",
+      "reverse": false,
+      "algorithm": 2,
+      "result": "no_path",
+      "steps": 51,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "naive",
+      "reverse": false,
+      "algorithm": 3,
+      "result": "no_path",
+      "steps": 58,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 24
+    },
+    {
+      "kind": "naive",
+      "reverse": true,
+      "algorithm": 0,
+      "result": "no_path",
+      "steps": 51,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "naive",
+      "reverse": true,
+      "algorithm": 1,
+      "result": "no_path",
+      "steps": 54,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "naive",
+      "reverse": true,
+      "algorithm": 2,
+      "result": "no_path",
+      "steps": 51,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "naive",
+      "reverse": true,
+      "algorithm": 3,
+      "result": "no_path",
+      "steps": 58,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 24
+    },
+    {
+      "kind": "center_union",
+      "reverse": false,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 53,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "center_union",
+      "reverse": false,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 55,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "center_union",
+      "reverse": false,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 50,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "center_union",
+      "reverse": false,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 56,
+      "read_attempts": 22,
+      "page_reads": 9,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 22
+    },
+    {
+      "kind": "center_union",
+      "reverse": true,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 55,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "center_union",
+      "reverse": true,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 60,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "center_union",
+      "reverse": true,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 53,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "center_union",
+      "reverse": true,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 56,
+      "read_attempts": 22,
+      "page_reads": 9,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 22
+    },
+    {
+      "kind": "reference",
+      "reverse": false,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 53,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "reference",
+      "reverse": false,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 55,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "reference",
+      "reverse": false,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 50,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "reference",
+      "reverse": false,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 56,
+      "read_attempts": 22,
+      "page_reads": 9,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 22
+    },
+    {
+      "kind": "reference",
+      "reverse": true,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 55,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "reference",
+      "reverse": true,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 60,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "reference",
+      "reverse": true,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 53,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 12
+    },
+    {
+      "kind": "reference",
+      "reverse": true,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 56,
+      "read_attempts": 22,
+      "page_reads": 9,
+      "library_payload": 5324,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": false,
+      "extent_capacity": 0,
+      "verification_read_attempts": 0,
+      "physical_read_attempts": 22
+    },
+    {
+      "kind": "virtual",
+      "reverse": false,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 53,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 6156,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": true,
+      "extent_capacity": 4,
+      "verification_read_attempts": 1466,
+      "physical_read_attempts": 1478
+    },
+    {
+      "kind": "virtual",
+      "reverse": false,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 55,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 6156,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": true,
+      "extent_capacity": 4,
+      "verification_read_attempts": 1466,
+      "physical_read_attempts": 1478
+    },
+    {
+      "kind": "virtual",
+      "reverse": false,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 50,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 6156,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": true,
+      "extent_capacity": 4,
+      "verification_read_attempts": 1466,
+      "physical_read_attempts": 1478
+    },
+    {
+      "kind": "virtual",
+      "reverse": false,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 56,
+      "read_attempts": 22,
+      "page_reads": 9,
+      "library_payload": 6156,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        0,
+        2
+      ],
+      "virtual_mode": true,
+      "extent_capacity": 4,
+      "verification_read_attempts": 1466,
+      "physical_read_attempts": 1488
+    },
+    {
+      "kind": "virtual",
+      "reverse": true,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 55,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 6156,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": true,
+      "extent_capacity": 4,
+      "verification_read_attempts": 1466,
+      "physical_read_attempts": 1478
+    },
+    {
+      "kind": "virtual",
+      "reverse": true,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 60,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 6156,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": true,
+      "extent_capacity": 4,
+      "verification_read_attempts": 1466,
+      "physical_read_attempts": 1478
+    },
+    {
+      "kind": "virtual",
+      "reverse": true,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 53,
+      "read_attempts": 12,
+      "page_reads": 4,
+      "library_payload": 6156,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": true,
+      "extent_capacity": 4,
+      "verification_read_attempts": 1466,
+      "physical_read_attempts": 1478
+    },
+    {
+      "kind": "virtual",
+      "reverse": true,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 56,
+      "read_attempts": 22,
+      "page_reads": 9,
+      "library_payload": 6156,
+      "rule_reader": 0,
+      "turn_reader": 0,
+      "binding": 0,
+      "edges": [
+        5,
+        3
+      ],
+      "virtual_mode": true,
+      "extent_capacity": 4,
+      "verification_read_attempts": 1466,
+      "physical_read_attempts": 1488
+    }
+  ],
+  "tools_sha256": {
+    "import_osm.py": "7316c1d937eed84da960c3e81cca616b375f21351214d13732e32c2d80fcbae5",
+    "merge_osm_regions.py": "e54c7d63dc84733ebec997c5dde4760fccdb304105dd56bb0affdd64002a442b",
+    "merge_regions.py": "c89bb56e3ba4842871eaae580d93a98986d6987c3ec493c68ee9b0817398325d",
+    "merge_outdoor_regions.py": "2a9a56977c11a971303fe30c67f59cf38b60ab7ca4d55e2fdda8f44ec97c6147",
+    "virtual_regions.py": "4632f3d3107d7d99ae6f68e88886db551722accc1c2f51101272f52fc6525e91",
+    "prepare_real_seam_sources.py": "90be7ba1f7f383c62c0e5c528c245ad392e140558f61456b1fd89881aaa3d54a",
+    "benchmark_real_raw_seam.py": "d178f24a3482969f604a4cd567f4f233c60104e39a6533c9e1599e6e32f401f2"
+  }
+}

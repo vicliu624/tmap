@@ -1,0 +1,7 @@
+/build*/
+/.codex-build/
+/.tmp/
+/.gitnexus/
+__pycache__/
+*.pyc
+AGENTS.local.md

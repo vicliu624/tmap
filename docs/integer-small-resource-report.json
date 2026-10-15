@@ -1,0 +1,10 @@
+{
+  "scope":"Cold synthetic comb, node endpoints, zero ascent, 2048 caller slots, Busy every second read; no board latency/power measurement",
+  "page_capacity":1024,
+  "results":[
+    {"algorithm":"integer_fifo","cost_cm":70056,"states":1494,"expansions":1469,"read_attempts":3352,"successful_bytes":1716224,"reserved_arrays_bytes":57344,"cursor_bytes":152},
+    {"algorithm":"dijkstra","cost_cm":70056,"states":1494,"expansions":1469,"read_attempts":3106,"successful_bytes":1590272,"reserved_arrays_bytes":73728,"cursor_bytes":312},
+    {"algorithm":"alt4","cost_cm":70056,"states":189,"expansions":63,"read_attempts":434,"successful_bytes":222208,"reserved_arrays_bytes":73728,"cursor_bytes":312},
+    {"algorithm":"floating_fifo","cost_cm":70056,"states":1494,"expansions":1469,"read_attempts":3352,"successful_bytes":1716224,"reserved_arrays_bytes":73728,"cursor_bytes":312}
+  ]
+}

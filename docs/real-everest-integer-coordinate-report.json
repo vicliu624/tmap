@@ -1,0 +1,1575 @@
+{
+  "package_sha256": "65ed9ebb4588cfd64b468348d5c9f86da24ece2cce7d491041d27696f6f5d151",
+  "probe_sha256": "ea61363d89ef6b97eb06c10422f867423bc55d14b968cb0e05ae9b02a930e513",
+  "cases": [
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "fifo",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1332,
+        "read_attempts": 51,
+        "successful_bytes": 51776,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "fifo",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1384,
+        "read_attempts": 105,
+        "successful_bytes": 53824,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "linear",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1334,
+        "read_attempts": 51,
+        "successful_bytes": 51776,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "linear",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1386,
+        "read_attempts": 105,
+        "successful_bytes": 53824,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "heap",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1323,
+        "read_attempts": 51,
+        "successful_bytes": 51776,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "heap",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1375,
+        "read_attempts": 105,
+        "successful_bytes": 53824,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "alt",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1327,
+        "read_attempts": 66,
+        "successful_bytes": 67136,
+        "library_payload_bytes": 17036,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 0,
+      "algorithm": "alt",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1394,
+        "read_attempts": 135,
+        "successful_bytes": 69184,
+        "library_payload_bytes": 17036,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "fifo",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1393,
+        "read_attempts": 68,
+        "successful_bytes": 69184,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "fifo",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1462,
+        "read_attempts": 139,
+        "successful_bytes": 71232,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "linear",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1395,
+        "read_attempts": 68,
+        "successful_bytes": 69184,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "linear",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1464,
+        "read_attempts": 139,
+        "successful_bytes": 71232,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "heap",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1384,
+        "read_attempts": 68,
+        "successful_bytes": 69184,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "heap",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1453,
+        "read_attempts": 139,
+        "successful_bytes": 71232,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "alt",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1388,
+        "read_attempts": 83,
+        "successful_bytes": 84544,
+        "library_payload_bytes": 17036,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "penalty": 5,
+      "algorithm": "alt",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        77920,
+        977
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 934508,
+        "length_cm": 544908,
+        "ascent_cm": 77920,
+        "descent_cm": 977,
+        "continuation_calls": 1472,
+        "read_attempts": 169,
+        "successful_bytes": 86592,
+        "library_payload_bytes": 17036,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            9,
+            89908,
+            605026
+          ],
+          [
+            5,
+            0,
+            4294967295
+          ],
+          [
+            6,
+            0,
+            3259
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "fifo",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1229,
+        "read_attempts": 50,
+        "successful_bytes": 50752,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "fifo",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1280,
+        "read_attempts": 103,
+        "successful_bytes": 52800,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "linear",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1259,
+        "read_attempts": 50,
+        "successful_bytes": 50752,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "linear",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1310,
+        "read_attempts": 103,
+        "successful_bytes": 52800,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "heap",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1220,
+        "read_attempts": 50,
+        "successful_bytes": 50752,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "heap",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1271,
+        "read_attempts": 103,
+        "successful_bytes": 52800,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "alt",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1187,
+        "read_attempts": 63,
+        "successful_bytes": 64064,
+        "library_payload_bytes": 17036,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 0,
+      "algorithm": "alt",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 544908,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1251,
+        "read_attempts": 129,
+        "successful_bytes": 66112,
+        "library_payload_bytes": 17036,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "fifo",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1282,
+        "read_attempts": 67,
+        "successful_bytes": 68160,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "fifo",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1350,
+        "read_attempts": 137,
+        "successful_bytes": 70208,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "linear",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1300,
+        "read_attempts": 67,
+        "successful_bytes": 68160,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "linear",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1368,
+        "read_attempts": 137,
+        "successful_bytes": 70208,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "heap",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1270,
+        "read_attempts": 67,
+        "successful_bytes": 68160,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "heap",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1338,
+        "read_attempts": 137,
+        "successful_bytes": 70208,
+        "library_payload_bytes": 16392,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "alt",
+      "busy_every": 0,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1248,
+        "read_attempts": 80,
+        "successful_bytes": 81472,
+        "library_payload_bytes": 17036,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "penalty": 5,
+      "algorithm": "alt",
+      "busy_every": 2,
+      "oracle_cm": [
+        544908,
+        977,
+        77920
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "cost_units": 549793,
+        "length_cm": 544908,
+        "ascent_cm": 977,
+        "descent_cm": 77920,
+        "continuation_calls": 1329,
+        "read_attempts": 163,
+        "successful_bytes": 83520,
+        "library_payload_bytes": 17036,
+        "state_capacity": 128,
+        "leg_capacity": 128,
+        "legs": [
+          [
+            4,
+            32754,
+            36013
+          ],
+          [
+            8,
+            0,
+            4294967295
+          ],
+          [
+            3,
+            0,
+            515118
+          ]
+        ]
+      }
+    }
+  ],
+  "scope": "Real Center package and integer coordinate snap/endpoint/search/clipped statistics. Independent packed-profile arithmetic; cross-algorithm cost equality is not an independent optimality proof. Fixed 128 states/legs and host ABI. No physical MCU peak, allocator/application overhead or surveyed accuracy claim."
+}

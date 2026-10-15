@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(tmap_consumer LANGUAGES CXX)
+find_package(tmap CONFIG REQUIRED)
+add_executable(consumer main.cpp)
+target_link_libraries(consumer PRIVATE tmap::tmap)

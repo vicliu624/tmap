@@ -1,0 +1,49 @@
+{
+  "source": "liechtenstein-261013.osm.pbf",
+  "source_bytes": 3469995,
+  "source_sha256": "07f3884fd1dbe647d6ff68ec3fc66725a77beb4b20eab792431fc4bc9ce8c97e",
+  "entities": {
+    "node": 361458,
+    "way": 42126,
+    "relation": 975
+  },
+  "conditions": [
+    {
+      "entity": "relation",
+      "key": "access:conditional",
+      "expression": "no @ (Mar 15 - Sep 01)",
+      "count": 1
+    },
+    {
+      "entity": "relation",
+      "key": "access:conditional",
+      "expression": "no @ (Mar 15 - Sep 15)",
+      "count": 1
+    },
+    {
+      "entity": "way",
+      "key": "access:conditional",
+      "expression": "destination @ (06:30-08:30); destination @ (16:30-18:30)",
+      "count": 1
+    },
+    {
+      "entity": "way",
+      "key": "access:conditional",
+      "expression": "destination @ (06:30-08:30);destination @ (16:30-18:30)",
+      "count": 5
+    },
+    {
+      "entity": "way",
+      "key": "access:conditional",
+      "expression": "no @ (Mar 15 - Sep 15)",
+      "count": 3
+    },
+    {
+      "entity": "way",
+      "key": "access:conditional",
+      "expression": "no @ (Mar 15-Sep 15)",
+      "count": 1
+    }
+  ],
+  "scope": "Raw tag inventory from immutable local snapshot; occurrence is not proof of routable relevance or supported grammar."
+}

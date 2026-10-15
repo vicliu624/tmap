@@ -1,0 +1,64 @@
+{
+  "osm_sha256": "3540b852266a4f0571f73692ffcd76d875c84d3ca3dd97b4b1c6d1a0ccefdac6",
+  "center": [
+    86.925,
+    27.98
+  ],
+  "measurements": [
+    {
+      "result": "ok",
+      "segments": 256,
+      "interval_m": 200,
+      "density_retries": 1,
+      "operations": 2708,
+      "reads": 65,
+      "read_bytes": 65088,
+      "workspace_bytes": 3360,
+      "cursor_bytes": 568,
+      "segment_buffer_bytes": 12288,
+      "zoom": 12
+    },
+    {
+      "result": "ok",
+      "segments": 348,
+      "interval_m": 200,
+      "density_retries": 3,
+      "operations": 5800,
+      "reads": 95,
+      "read_bytes": 95808,
+      "workspace_bytes": 3360,
+      "cursor_bytes": 568,
+      "segment_buffer_bytes": 12288,
+      "zoom": 14
+    },
+    {
+      "result": "ok",
+      "segments": 244,
+      "interval_m": 50,
+      "density_retries": 2,
+      "operations": 7302,
+      "reads": 142,
+      "read_bytes": 143936,
+      "workspace_bytes": 3360,
+      "cursor_bytes": 568,
+      "segment_buffer_bytes": 12288,
+      "zoom": 16
+    },
+    {
+      "result": "ok",
+      "segments": 124,
+      "interval_m": 10,
+      "density_retries": 0,
+      "operations": 2253,
+      "reads": 41,
+      "read_bytes": 40512,
+      "workspace_bytes": 3360,
+      "cursor_bytes": 568,
+      "segment_buffer_bytes": 12288,
+      "zoom": 18
+    }
+  ],
+  "center_package": "everest-real-1k-alt4",
+  "source_url": "https://api.openstreetmap.org/api/0.6/map?bbox=86.9,27.96,86.94,27.99",
+  "limitations": "Real small mountain graph plus real HGT; datum unknown; host payload and read counts, no physical MCU RAM/SD latency/power evidence."
+}

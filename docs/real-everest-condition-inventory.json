@@ -1,0 +1,12 @@
+{
+  "source": "everest-20261014.osm",
+  "source_bytes": 764088,
+  "source_sha256": "3540b852266a4f0571f73692ffcd76d875c84d3ca3dd97b4b1c6d1a0ccefdac6",
+  "entities": {
+    "node": 973,
+    "way": 12,
+    "relation": 22
+  },
+  "conditions": [],
+  "scope": "Raw tag inventory from immutable local snapshot; occurrence is not proof of routable relevance or supported grammar."
+}

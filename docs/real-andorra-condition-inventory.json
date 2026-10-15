@@ -1,0 +1,12 @@
+{
+  "source": "andorra-261013.osm.pbf",
+  "source_bytes": 3489483,
+  "source_sha256": "356b91b59158e6e4bb8f6f7323ebac0c53c4535ee7adb226f19d434965080d41",
+  "entities": {
+    "node": 501784,
+    "way": 26734,
+    "relation": 812
+  },
+  "conditions": [],
+  "scope": "Raw tag inventory from immutable local snapshot; occurrence is not proof of routable relevance or supported grammar."
+}

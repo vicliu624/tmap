@@ -1,0 +1,718 @@
+{
+  "scope": "Actual Center CLI production from explicitly synthetic OSM XML. Each query starts a new probe/package/cache, Busy every other readAt. Integer algorithms and node routes; no physical MCU or real regional conditions.",
+  "manifest_sha256": "e5aa055114b109234acee29a332a4b77c7bf22811bf60e7524f6af5440c8392f",
+  "package_sha256": "3698e3c7ac67004f457c5c0c2585e1e843fa3bd3528f743e7d36e90d5baaa8dc",
+  "package_bytes": 15360,
+  "source_sha256": "706d07edc7cda10df0e1f2eb2f914b454b61856f0f618aed7586e5cc0d34f32b",
+  "probe_sha256": "8de367fe8a1c00fd72f0c57e258cf983c3c0d4c6564daf25ff3fee871a562298",
+  "cases": [
+    {
+      "utc": 345600,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 172,
+      "read_attempts": 66,
+      "page_reads": 31,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 176,
+      "read_attempts": 66,
+      "page_reads": 31,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 171,
+      "read_attempts": 66,
+      "page_reads": 31,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 144,
+      "read_attempts": 62,
+      "page_reads": 29,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 140,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        3,
+        1
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 142,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        3,
+        1
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 138,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        3,
+        1
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 144,
+      "read_attempts": 62,
+      "page_reads": 29,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        3,
+        1
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 172,
+      "read_attempts": 66,
+      "page_reads": 31,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 176,
+      "read_attempts": 66,
+      "page_reads": 31,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 171,
+      "read_attempts": 66,
+      "page_reads": 31,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 144,
+      "read_attempts": 62,
+      "page_reads": 29,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 140,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        3,
+        1
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 142,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        3,
+        1
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 138,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        3,
+        1
+      ]
+    },
+    {
+      "utc": 345600,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 144,
+      "read_attempts": 62,
+      "page_reads": 29,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        3,
+        1
+      ]
+    },
+    {
+      "utc": 432000,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 0,
+      "result": "no_path",
+      "steps": 74,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 432000,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 1,
+      "result": "no_path",
+      "steps": 75,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 432000,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 2,
+      "result": "no_path",
+      "steps": 74,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 432000,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 3,
+      "result": "no_path",
+      "steps": 77,
+      "read_attempts": 28,
+      "page_reads": 12,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 432000,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 0,
+      "result": "no_path",
+      "steps": 74,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 432000,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 1,
+      "result": "no_path",
+      "steps": 75,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 432000,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 2,
+      "result": "no_path",
+      "steps": 74,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 432000,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 3,
+      "result": "no_path",
+      "steps": 77,
+      "read_attempts": 28,
+      "page_reads": 12,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 432000,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 139,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 432000,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 141,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 432000,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 138,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 432000,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 144,
+      "read_attempts": 62,
+      "page_reads": 29,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 432000,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 0,
+      "result": "no_path",
+      "steps": 74,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 432000,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 1,
+      "result": "no_path",
+      "steps": 75,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 432000,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 2,
+      "result": "no_path",
+      "steps": 74,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 432000,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 3,
+      "result": "no_path",
+      "steps": 77,
+      "read_attempts": 28,
+      "page_reads": 12,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 0,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 139,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 0,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 141,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 0,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 138,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 0,
+      "mode": 1,
+      "reverse": false,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 144,
+      "read_attempts": 62,
+      "page_reads": 29,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 0,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 0,
+      "result": "no_path",
+      "steps": 74,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 0,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 1,
+      "result": "no_path",
+      "steps": 75,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 0,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 2,
+      "result": "no_path",
+      "steps": 74,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 0,
+      "mode": 1,
+      "reverse": true,
+      "algorithm": 3,
+      "result": "no_path",
+      "steps": 77,
+      "read_attempts": 28,
+      "page_reads": 12,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 0,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 0,
+      "result": "ok",
+      "steps": 139,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 0,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 1,
+      "result": "ok",
+      "steps": 141,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 0,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 2,
+      "result": "ok",
+      "steps": 138,
+      "read_attempts": 52,
+      "page_reads": 24,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 0,
+      "mode": 2,
+      "reverse": false,
+      "algorithm": 3,
+      "result": "ok",
+      "steps": 144,
+      "read_attempts": 62,
+      "page_reads": 29,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": [
+        0,
+        2
+      ]
+    },
+    {
+      "utc": 0,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 0,
+      "result": "no_path",
+      "steps": 74,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 0,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 1,
+      "result": "no_path",
+      "steps": 75,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 0,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 2,
+      "result": "no_path",
+      "steps": 74,
+      "read_attempts": 24,
+      "page_reads": 10,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    },
+    {
+      "utc": 0,
+      "mode": 2,
+      "reverse": true,
+      "algorithm": 3,
+      "result": "no_path",
+      "steps": 77,
+      "read_attempts": 28,
+      "page_reads": 12,
+      "library_payload": 12053,
+      "rule_reader": 584,
+      "edges": []
+    }
+  ]
+}

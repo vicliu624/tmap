@@ -1,0 +1,31 @@
+{
+  "cursor_bytes": 184,
+  "output_bytes": 1,
+  "record_bytes": 24,
+  "test_output": "TURN_DECISION cursor=24 cases=88\nROAD cursor=280 masks=2\nTURN cursor=184 output=1\nPASS streaming clauses, Busy, unpublished output, last-match, OR, epoch, cancel, limits; cursor=128 output=8 permissions=7 masks=2 permission_cases=62208",
+  "test_sha256": "5667bd85d5cb8d3a1f7b83cb23c882b1cb2b0f8e75e3e3fd2f20d5a4aeea33ed",
+  "source_sha256": {
+    "include/tmap/calendar_rules.h": "3173b1db5a701e346333e5ea4ddf837312eb62b8669316894b7b404a951fce8c",
+    "include/tmap/road_permissions.h": "2b692424bdce58125cf2283bb0f9c66dffed5385eb5d30ff87eacbb7ee19cd0d",
+    "include/tmap/turn_permissions.h": "72b5c4d646b28be076ffdbcd505d57e9e75f0c3cfee1e5d3ed557dc9ffdfae30",
+    "include/tmap/turn_rules.h": "13c3a484b20d776a83132345b69b42da24624d229900bac82f52ef51c3eaac73",
+    "include/tmap/road_rules.h": "609c923ae17139fabb57595b749fa9de0571187085ec69b8c28b154b237863a5",
+    "src/turn_rules.cpp": "95ce13ddd0b08eba8a4dcedcd681292d9b753607b34a93dc259b9779876e0125",
+    "src/road_rules.cpp": "29359a600793e01171d28cb1d740b255ee73ddd001a91cf460bf1b1c4ee866ea",
+    "src/calendar_rules.cpp": "b925db6ab407b73355b74b7795b4d73cf7bfb9ee64a180e49bb8a7b76c61238a",
+    "tools/compile_calendar.py": "69386358e1fd5c7eaa2f3bb78432a0989f10d0b450599f2a7ca27b25a2ae4457",
+    "tools/compile_road_conditions.py": "9d083b16e953ada13c476ef48512abd2e61c6ca4ce67abe76ebc31f517b80f85",
+    "tools/compile_turn_conditions.py": "323cc696c11a11d723d69c14e17e4d2f398d9be1e436d07479625166b164e4a5",
+    "tests/test_calendar_rules.cpp": "16606ef696ae21115fcccfbf44ff679c4ffcca387097878ea2a63b6de35596f6"
+  },
+  "scope": "Actual SDK stream-unit tests, including replacement during read and publication gate. Host ABI, no physical MCU peaks or live navigation rule integration claim.",
+  "road_permission_bytes": 7,
+  "road_mask_bytes": 2,
+  "road_permission_cases": 62208,
+  "road_rule_cursor_bytes": 280,
+  "road_rule_output_bytes": 2,
+  "turn_rule_cursor_bytes": 184,
+  "turn_rule_output_bytes": 1,
+  "turn_decision_cursor_bytes": 24,
+  "turn_decision_cases": 88
+}

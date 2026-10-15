@@ -1,0 +1,106 @@
+{
+  "scope": "Explicitly synthetic SDK and Center joint-feature packages. Serialized round-robin integer ALT node route, road/barrier/turn readers, partial-edge integer elevation, live contour renderer and polygon administration share one cache. Busy every other file read. 37 real feature sections; padded valid 64-section and CRC-valid malformed 65-count fixtures test boundaries. Typed payload includes configured service controls/buffers and two separately budgeted permission outputs, excludes host driver/file/allocator/task storage. No physical board or real combined geographic dataset claim.",
+  "center_manifest_sha256": "d81f12e0c1f4aad86bc86bada59701f66f325861ab9f6a9ccae4eb93b8083f5e",
+  "package_sha256": "4ec6245a3e4ebdc2d1da52ec43fffd3e7a8e1a09308e1b7a4b04bad3623a8748",
+  "package_bytes": 39936,
+  "source_sha256": "fc7f4bc061ac0dcae1d57f98dfc83c3f1953f7430628fb498cb437bb6e0f7441",
+  "outdoor_sha256": "bd641adadc5a62abb165087a8e4fa9e5a25e570ff99ec80f6867ef33eb0eb81d",
+  "section_types": [
+    "1000",
+    "1001",
+    "1002",
+    "1010",
+    "1011",
+    "1012",
+    "1013",
+    "1100",
+    "1101",
+    "1102",
+    "1103",
+    "1104",
+    "1105",
+    "1106",
+    "1107",
+    "1108",
+    "1109",
+    "1110",
+    "1111",
+    "1112",
+    "1113",
+    "1114",
+    "1115",
+    "1116",
+    "1117",
+    "1118",
+    "1119",
+    "1120",
+    "1121",
+    "1122",
+    "1123",
+    "1124",
+    "1125",
+    "1200",
+    "1201",
+    "1202",
+    "1203"
+  ],
+  "sources": {
+    "tests/test_full_features.cpp": "e56469d069177f6f401d4dcc3fe9402642947c0acee89f80abf4ee76f91c00e7",
+    "tests/make_fixtures.py": "395a6e8e6cc360fac739d39a8aeb7f15580817a53941e597df37108f0742aed9",
+    "tools/tmap_pack.py": "17e30ee9db707ffbaa672b559e3b7be14fdb6e3059832f25ddeec282d2cf837d",
+    "include/tmap/package.h": "695e33fd055ee378cd1cc9e4367992b9e3bb3722f46cdd71e55015f87a126526",
+    "src/package.cpp": "011adc0d71c8e3bc390bfc781b5ea0bbf1aa96f01db5fde715f6ec94b745e194",
+    "src/resource_budget.cpp": "d0ce2df83edf5c387127a9f53bf232f5800e30cc95ef1ed79f71abac081089ac",
+    "tools/collect_full_feature_evidence.py": "5812f5ab6180f466e03b2cf96171433105c9c694936ae3e4721ac2de5bf434f1"
+  },
+  "profiles": [
+    {
+      "configuration": {
+        "TMAP_CACHE_PAGE_BYTES": 4096,
+        "TMAP_PACKAGE_CACHE_PAGES": 2,
+        "TMAP_PACKAGE_SECTION_SLOTS": 32
+      },
+      "probe_sha256": "b707d0df8ed0e0cf9e687fdde50052edde088f66360799470e32ce36d6a7a70b",
+      "outputs": {
+        "synthetic_sdk": "FULL_FEATURES capacity_rejection=37,64 invalid=65 slots=32 workspace=9504\n",
+        "synthetic_center": "FULL_FEATURES center_capacity_rejection=37 slots=32 workspace=9504\n"
+      }
+    },
+    {
+      "configuration": {
+        "TMAP_CACHE_PAGE_BYTES": 1024,
+        "TMAP_PACKAGE_CACHE_PAGES": 2,
+        "TMAP_PACKAGE_SECTION_SLOTS": 32
+      },
+      "probe_sha256": "0a6b2c398c80ed64949057aa521551ca4a061fed83c0702a6fb26fde4d4c91cd",
+      "outputs": {
+        "synthetic_sdk": "FULL_FEATURES capacity_rejection=37,64 invalid=65 slots=32 workspace=3360\n",
+        "synthetic_center": "FULL_FEATURES center_capacity_rejection=37 slots=32 workspace=3360\n"
+      }
+    },
+    {
+      "configuration": {
+        "TMAP_CACHE_PAGE_BYTES": 1024,
+        "TMAP_PACKAGE_CACHE_PAGES": 2,
+        "TMAP_PACKAGE_SECTION_SLOTS": 37
+      },
+      "probe_sha256": "aa5260f36ca3b59becaa6e6c903e282b93606cbe12f03893f29654b87cf56fd2",
+      "outputs": {
+        "synthetic_sdk": "JOINT results admin=ok contour=ok elevation=ok route=ok path=Test Country / Test District depth=2 ascent=500 segments=3\nFULL_FEATURES sections=37 slots=37 workspace=3560 payload=9176 rounds=148 read_attempts=165 route_edges=3 contour_segments=3 ascent_cm=500 admin_depth=2\n",
+        "synthetic_center": "JOINT results admin=ok contour=ok elevation=ok route=ok path=Test Country / Test District depth=2 ascent=500 segments=3\nFULL_FEATURES sections=37 slots=37 workspace=3560 payload=9176 rounds=153 read_attempts=145 route_edges=3 contour_segments=3 ascent_cm=500 admin_depth=2\n"
+      }
+    },
+    {
+      "configuration": {
+        "TMAP_CACHE_PAGE_BYTES": 1024,
+        "TMAP_PACKAGE_CACHE_PAGES": 2,
+        "TMAP_PACKAGE_SECTION_SLOTS": 64
+      },
+      "probe_sha256": "8a779251e35417b820a5e4efd9c09b5b6cb451dee6334571910abcd00a2947e2",
+      "outputs": {
+        "synthetic_sdk": "JOINT results admin=ok contour=ok elevation=ok route=ok path=Test Country / Test District depth=2 ascent=500 segments=3\nFULL_FEATURES sections=37 slots=64 workspace=4640 payload=10256 rounds=148 read_attempts=173 route_edges=3 contour_segments=3 ascent_cm=500 admin_depth=2\n",
+        "synthetic_center": "JOINT results admin=ok contour=ok elevation=ok route=ok path=Test Country / Test District depth=2 ascent=500 segments=3\nFULL_FEATURES sections=37 slots=64 workspace=4640 payload=10256 rounds=153 read_attempts=145 route_edges=3 contour_segments=3 ascent_cm=500 admin_depth=2\n"
+      }
+    }
+  ]
+}

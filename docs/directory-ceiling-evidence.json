@@ -1,0 +1,19 @@
+{
+  "scope": "CMake explicit bounded-profile rejection, no build started",
+  "command": [
+    "cmake",
+    "-S",
+    ".",
+    "-B",
+    ".codex-build/ceiling41",
+    "-G",
+    "Ninja",
+    "-DCMAKE_CXX_COMPILER=C:/MinGW/bin/g++.exe",
+    "-DTMAP_CACHE_PAGE_BYTES=4096",
+    "-DTMAP_PACKAGE_CACHE_PAGES=3",
+    "-DTMAP_PACKAGE_SECTION_SLOTS=41",
+    "-DTMAP_BUILD_TESTS=OFF"
+  ],
+  "exit_code": 1,
+  "stderr": "CMake Error at CMakeLists.txt:14 (message):\n  Configured outdoor workspace would exceed the legacy baseline\n\n\n"
+}

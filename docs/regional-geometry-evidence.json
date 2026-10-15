@@ -1,0 +1,14 @@
+{
+  "date_utc": "2026-10-14T18:28:23.828683+00:00",
+  "tests": 6,
+  "skipped": 0,
+  "shapely": "2.1.2",
+  "geos": "3.13.1",
+  "source_sha256": {
+    "tools/union_regional_administration.py": "b24a221daf347d8d0a253c4fda9373eceb3b7c11d9a6c72383c9430a8248decb",
+    "tools/stitch_regional_contours.py": "9569bf8d7cd6b4efbcad6cea1b8076c86abe3963033ee83b6305cb4576a8f0f1",
+    "tests/test_regional_admin_union.py": "bcdd28720a7558c3f39987c30d88c5f72745fbe059b23db5d821898fc4ae04de"
+  },
+  "inspector_sha256": "bca12ab66f8a1f132374f21799846c0b31327dd25b99779a592ea2e8c5a208e3",
+  "scope": "Synthetic producer geometry and actual SDK internal-seam query. Not real regional survey, physical MCU or host native GEOS peak memory measurement."
+}

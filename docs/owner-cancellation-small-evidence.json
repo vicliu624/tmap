@@ -1,0 +1,26 @@
+{
+  "scope": "Every one-work-unit initialization prefix through completion, cancellation, zero live allocations, restart on the same owner; fake external-only provider. No MCU execution, physical PSRAM allocation/peak or allocator-latency claim.",
+  "tests": [
+    {
+      "test": "tmap_route_storage_tests",
+      "executable_sha256": "c633373452e8c714a965923c970bb34c61a04dbcf98a8cac2eac7c94801154b7",
+      "output": "CANCEL_SLICES checked=51 queued=1 label_scan=1 landmarks=1 retry_each=1 external_only=1\nLABEL_SCAN_STORAGE owner=76 queue_free_bytes=208 queued_bytes=240 external_allocations=2 rollback_points=2\nPASS all three allocation failure rollback points, retry, shared slice budget, hidden partial arrays, preflight limit, cancel/reset\n"
+    },
+    {
+      "test": "tmap_session_tests",
+      "executable_sha256": "177cb0707669be663fa4f868586cc00b952607031cf035512b627f03cd7071a9",
+      "output": "SESSION_CANCEL_SLICES checked=26 busy=1 retry_each=1 external_only=1 zero_live_bytes_each=1\nPASS Busy/open/features, four allocation rollback points, cancel/restart, preflight, missing feature, corrupt package; owner=64 payload=3984\n"
+    }
+  ],
+  "source_sha256": {
+    "tests/test_route_storage.cpp": "23d8ba7ef1029bbe7aea6c1b440035dd04ceb599799d730a00fc555584813fe1",
+    "tests/test_session.cpp": "feae65d850849586c507434501abbcf4540ac75dadf7a9e4d7cdeb3c5cd4eab7",
+    "include/tmap/memory.h": "148f489408ab375d5036d980d057ec00972d8d7b931928e1e26399883c49c3fa",
+    "include/tmap/staged_memory.h": "15cb3f232f7c82c9d6272d7997fba484c3e34511d15a1af864982c6ebe2b99ac",
+    "include/tmap/memory_object.h": "3eeee727b59f5c72a87aa559fc46571ad93b854f8eb907e33fdf043591e9da15",
+    "include/tmap/route_storage.h": "dd815e576a08b8e25f9b16617e9b41d4b9be74f88a462c7e7eec64dcff377ea3",
+    "include/tmap/outdoor_session.h": "984b491e65f52337c499e84825d75459ef7591204dac5115fbf27736a682b760",
+    "src/outdoor_session.cpp": "df47331c72dcf3dff4a491e24568965f316e452a0f65accb2a1f6885b8182c99",
+    "tools/check_owner_cancellation.py": "c6321129009c9f53c446ca076f5faad468d5deca78901154255007a572e9a43c"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "source": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N27/N27E086.hgt.gz",
+  "date": "2026-10-14",
+  "attribution": "Mapzen Terrain Tiles; https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+  "vertical_datum": 0,
+  "package_bytes": 475136,
+  "columns": 145,
+  "rows": 109,
+  "views": [
+    {
+      "result": "ok",
+      "segments": 256,
+      "interval_m": 200,
+      "density_retries": 1,
+      "operations": 2708,
+      "reads": 23,
+      "read_bytes": 86720,
+      "workspace_bytes": 9504,
+      "cursor_bytes": 568,
+      "segment_buffer_bytes": 12288,
+      "zoom": 12
+    },
+    {
+      "result": "ok",
+      "segments": 290,
+      "interval_m": 200,
+      "density_retries": 3,
+      "operations": 4248,
+      "reads": 27,
+      "read_bytes": 103104,
+      "workspace_bytes": 9504,
+      "cursor_bytes": 568,
+      "segment_buffer_bytes": 12288,
+      "zoom": 14
+    },
+    {
+      "result": "ok",
+      "segments": 491,
+      "interval_m": 20,
+      "density_retries": 1,
+      "operations": 5459,
+      "reads": 66,
+      "read_bytes": 262848,
+      "workspace_bytes": 9504,
+      "cursor_bytes": 568,
+      "segment_buffer_bytes": 12288,
+      "zoom": 16
+    },
+    {
+      "result": "ok",
+      "segments": 139,
+      "interval_m": 10,
+      "density_retries": 0,
+      "operations": 2454,
+      "reads": 26,
+      "read_bytes": 99008,
+      "workspace_bytes": 9504,
+      "cursor_bytes": 568,
+      "segment_buffer_bytes": 12288,
+      "zoom": 18
+    }
+  ],
+  "source_sha256": "0e95b43508321ee2b3d9454797130bf1c972737377eff4cb07b4cf912138aad1",
+  "elevation_check": {
+    "longitude": 86.92,
+    "latitude": 27.975,
+    "reader_m": 7225.91,
+    "input_m": 7225.913557153009
+  },
+  "limitations": "Desktop ABI; no ESP latency/stack-watermark claim. Source datum unknown; source terrain accuracy not independently verified."
+}

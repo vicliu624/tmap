@@ -1,0 +1,14 @@
+{
+  "arguments": [
+    "C:/Users/vicliu/Projects/trail-mate-center/artifacts/tmap/osm/world-osm-z0-7.tmap",
+    "7",
+    "116.4",
+    "39.9"
+  ],
+  "output": "file=4108759040 offset=2044522496 tile=7/105/48 crc=3ef54c05 codec=1 workspace=14024 reader=120 pois=61800\nannotation 天津市 39.4080804 117.2097168\nannotation 北京市 40.2554247 116.6404724\nannotation 河北省 39.4102025 115.6530762\nannotations=51 page_reads=217\nsearch 北京市 39.9055225 116.3912354\nsearch 北京市 40.2554247 116.6404724\nsearch_matches=2 search_steps=1 cursor=856\n",
+  "identical": true,
+  "baseline_median_ms": 34.42330006510019,
+  "standalone_median_ms": 37.49170002993196,
+  "note": "Host process timing includes startup and file cache; does not establish ESP latency.",
+  "runs": 5
+}

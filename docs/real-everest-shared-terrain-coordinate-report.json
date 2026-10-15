@@ -1,0 +1,208 @@
+{
+  "package_sha256": "65ed9ebb4588cfd64b468348d5c9f86da24ece2cce7d491041d27696f6f5d151",
+  "inspector_sha256": "c6ce22c7745178c2e27a13f9bf807eee41ab8010dbc658582c1884685d02b21f",
+  "cases": [
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "length_m": 5449.07711006,
+        "ascent_m": 779.2,
+        "descent_m": 9.77,
+        "cost_m": 5449.07711006,
+        "ascent_penalty": 0.0,
+        "reads": 92,
+        "read_bytes": 92736,
+        "host_payload_bytes": 12624,
+        "legs": [
+          {
+            "edge": 9,
+            "first_segment": 40,
+            "last_segment": 4294967295,
+            "first_fraction": 0,
+            "last_fraction": 1
+          },
+          {
+            "edge": 5,
+            "first_segment": 0,
+            "last_segment": 4294967295,
+            "first_fraction": 0,
+            "last_fraction": 1
+          },
+          {
+            "edge": 6,
+            "first_segment": 0,
+            "last_segment": 2,
+            "first_fraction": 0,
+            "last_fraction": 0
+          }
+        ]
+      },
+      "packed_profile_oracle": [
+        5449.077110056646,
+        779.2,
+        9.77
+      ]
+    },
+    {
+      "start": [
+        86.8718501,
+        27.996986
+      ],
+      "destination": [
+        86.9049103,
+        27.9792305
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "length_m": 5449.07711006,
+        "ascent_m": 779.2,
+        "descent_m": 9.77,
+        "cost_m": 9345.07711006,
+        "ascent_penalty": 5.0,
+        "reads": 109,
+        "read_bytes": 110144,
+        "host_payload_bytes": 12624,
+        "legs": [
+          {
+            "edge": 9,
+            "first_segment": 40,
+            "last_segment": 4294967295,
+            "first_fraction": 0,
+            "last_fraction": 1
+          },
+          {
+            "edge": 5,
+            "first_segment": 0,
+            "last_segment": 4294967295,
+            "first_fraction": 0,
+            "last_fraction": 1
+          },
+          {
+            "edge": 6,
+            "first_segment": 0,
+            "last_segment": 2,
+            "first_fraction": 0,
+            "last_fraction": 0
+          }
+        ]
+      },
+      "packed_profile_oracle": [
+        5449.077110056646,
+        779.2,
+        9.77
+      ]
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "length_m": 5449.07711006,
+        "ascent_m": 9.77,
+        "descent_m": 779.2,
+        "cost_m": 5449.07711006,
+        "ascent_penalty": 0.0,
+        "reads": 76,
+        "read_bytes": 76352,
+        "host_payload_bytes": 12624,
+        "legs": [
+          {
+            "edge": 4,
+            "first_segment": 8,
+            "last_segment": 4294967295,
+            "first_fraction": 1,
+            "last_fraction": 1
+          },
+          {
+            "edge": 8,
+            "first_segment": 0,
+            "last_segment": 4294967295,
+            "first_fraction": 0,
+            "last_fraction": 1
+          },
+          {
+            "edge": 3,
+            "first_segment": 0,
+            "last_segment": 121,
+            "first_fraction": 0,
+            "last_fraction": 1
+          }
+        ]
+      },
+      "packed_profile_oracle": [
+        5449.077110056646,
+        9.77,
+        779.2
+      ]
+    },
+    {
+      "start": [
+        86.9049103,
+        27.9792305
+      ],
+      "destination": [
+        86.8718501,
+        27.996986
+      ],
+      "measurement": {
+        "result": "ok",
+        "statistics_result": "ok",
+        "length_m": 5449.07711006,
+        "ascent_m": 9.77,
+        "descent_m": 779.2,
+        "cost_m": 5497.92711006,
+        "ascent_penalty": 5.0,
+        "reads": 93,
+        "read_bytes": 93760,
+        "host_payload_bytes": 12624,
+        "legs": [
+          {
+            "edge": 4,
+            "first_segment": 8,
+            "last_segment": 4294967295,
+            "first_fraction": 1,
+            "last_fraction": 1
+          },
+          {
+            "edge": 8,
+            "first_segment": 0,
+            "last_segment": 4294967295,
+            "first_fraction": 0,
+            "last_fraction": 1
+          },
+          {
+            "edge": 3,
+            "first_segment": 0,
+            "last_segment": 121,
+            "first_fraction": 0,
+            "last_fraction": 1
+          }
+        ]
+      },
+      "packed_profile_oracle": [
+        5449.077110056646,
+        9.77,
+        779.2
+      ]
+    }
+  ],
+  "tolerance_m": 0.05,
+  "scope": "Actual Center package and C++ coordinate route/elevation aggregation; host payload and reads, not MCU peaks. Oracle shares packed samples but independently computes clipping and summation. No surveyed elevation accuracy claim."
+}
