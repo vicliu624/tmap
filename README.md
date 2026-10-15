@@ -4,7 +4,7 @@ Portable C++17 library for embedded offline maps, vector contours, elevation
 analysis and foot/bicycle routing. Located independently of Trail Mate; no
 Trail Mate sources or dependencies are required for a normal build.
 
-**0.1.0 is an experimental pre-release.** The portable core and host producers
+**0.1.1 is an experimental pre-release.** The portable core and host producers
 are tested on real map files and cross-compiled for ESP32-S3/C3. Physical MCU
 RAM/PSRAM peaks, task-stack watermarks, SD latency and power remain unmeasured.
 Full navigation does not fit every few-KiB MCU. Choose explicit storage budgets
@@ -35,7 +35,7 @@ Use `find_package(tmap CONFIG REQUIRED)` and link `tmap::tmap`, or add the sourc
 with `add_subdirectory`. Embedded consumers should disable desktop tools/tests
 as shown below. `library.json` provides a PlatformIO source-library manifest;
 application file, allocation, scheduler and display adapters remain explicit.
-Library version 0.1.0 and on-disk format versions v1/v2 are separate concepts.
+Library version 0.1.1 and on-disk format versions v1/v2 are separate concepts.
 
 Start with the [format](docs/FORMAT.md), [bounded elevation profiles](docs/ELEVATION_PROFILES.md)
 and examples. The [delivery audit](docs/DELIVERY_AUDIT.md) maps implemented features

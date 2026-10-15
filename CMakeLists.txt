@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(tmap VERSION 0.1.0 LANGUAGES CXX)
+project(tmap VERSION 0.1.1 LANGUAGES CXX)
 set(TMAP_CACHE_PAGE_BYTES 4096 CACHE STRING "Maximum outdoor physical page capacity: 1024/2048/4096")
 set(TMAP_PACKAGE_CACHE_PAGES 2 CACHE STRING "Fixed outdoor cache pages: 2..4")
 set(TMAP_PACKAGE_SECTION_SLOTS 32 CACHE STRING "Fixed outdoor directory slots: 4..64")

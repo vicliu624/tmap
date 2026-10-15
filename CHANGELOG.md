@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1 — 2026-10-15
+
+Experimental public release following the initial 0.1.0 release candidate.
+
+- Fix test counter deduction and formatting on 64-bit Linux hosts.
+- Split the integer coordinate-routing prepared phase to keep Clang dispatcher
+  stack frames within the existing host limit; retain the ESP stack gates.
+- Clarify installation, memory evidence, test counts and pre-release boundaries.
+
 ## 0.1.0 — 2026-10-15
 
 First independent experimental pre-release.
