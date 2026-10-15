@@ -40,6 +40,9 @@ enum class SectionType : uint32_t
     ContourData = 1011,
     ContourOverviewIndex = 1012,
     ContourOverviewData = 1013,
+    TerrainLodPolicy = 1020,
+    TerrainLodIndex = 1021,
+    TerrainLodData = 1022,
     Graph = 1100,
     Nodes = 1101,
     Edges = 1102,
@@ -76,7 +79,8 @@ enum Capability : uint32_t
     Elevation = 1,
     Contours = 2,
     Routing = 4,
-    Administration = 8
+    Administration = 8,
+    Display = 16
 };
 struct OutdoorSection
 {

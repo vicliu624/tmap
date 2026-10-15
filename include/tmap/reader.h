@@ -179,6 +179,7 @@ class Reader
     static uint32_t crc32c(const uint8_t* bytes, size_t count);
 
   private:
+    Status openUnified(RandomAccessFile& file);
     friend class LegacyAdministrativeQuery;
     enum class KeyKind : uint8_t
     {

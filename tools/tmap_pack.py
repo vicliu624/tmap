@@ -145,6 +145,34 @@ def dem_sections(dem):
     return [(TERRAIN, meta, 1), (DEM_INDEX, bytes(index), len(index)//32), (DEM_DATA, bytes(data), nx*ny)]
 
 
+def dem_lod_sections(dem, maximum_zoom):
+    """Additional display grids; default analytic DEM remains unchanged."""
+    maximum_zoom = int(maximum_zoom)
+    if not 0 <= maximum_zoom <= 29:
+        raise ValueError('invalid DEM display zoom')
+    base_meta = dem_sections(dem)[0][1]
+    policy = [struct.pack('<QQ64sIIQ', 0, 0, base_meta, 1, 0, 0) for _ in range(30)]
+    index, data = bytearray(), bytearray()
+    previous = dem
+    for level in range(1, min(maximum_zoom, 8) + 1):
+        rows = previous['heights']
+        if len(rows) < 3 or len(rows[0]) < 3:
+            break
+        coarse = dict(previous, heights=[row[::2] for row in rows[::2]],
+            step=[float(step) * 2 for step in previous['step']],
+            resolution_m=int(previous['resolution_m']) * 2)
+        sections = dem_sections(coarse)
+        policy[maximum_zoom - level] = struct.pack('<QQ64sIIQ', len(index)//32, len(data), sections[0][1], 0, 0, 0)
+        index.extend(sections[1][1]); data.extend(sections[2][1])
+        previous = coarse
+    # Below the coarsest supplied zoom, reuse the coarsest grid rather than
+    # falling back to the fine grid. Above maximum_zoom retain analytic detail.
+    first = next((zoom for zoom, row in enumerate(policy) if struct.unpack_from('<I', row, 80)[0] == 0), None)
+    if first is not None:
+        for zoom in range(first): policy[zoom] = policy[first]
+    return [(1020, b''.join(policy), 30), (1021, bytes(index), len(index)//32), (1022, bytes(data), len(data)//2)]
+
+
 def extract_contours(dem, interval=10):
     """Marching squares, center saddle decider, stitched shared E7 endpoints.
 
@@ -621,6 +649,8 @@ def build(document):
     if "dem" in document:
         dem = document["dem"]
         sections.extend(dem_sections(dem)); capabilities |= 1
+        if 'dem_lod_maximum_zoom' in document:
+            sections.extend(dem_lod_sections(dem, document['dem_lod_maximum_zoom']))
         origin = point(dem["origin"]); dx, dy = map(e7, dem["step"])
         covered.append((origin[1], origin[0], origin[1]+(len(dem["heights"][0])-1)*dx, origin[0]+(len(dem["heights"])-1)*dy))
     contours = document.get("contours")

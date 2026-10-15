@@ -1,9 +1,9 @@
 {
   "name": "tmap",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Portable offline map, vector contour, elevation and routing library",
   "license": "AGPL-3.0-only",
-  "build": {"includeDir": "include", "srcDir": "src", "flags": "-std=c++17", "srcFilter": ["+<*>", "-<native_file.cpp>"]},
+  "build": {"includeDir": "include", "srcDir": "src", "flags": "-std=c++17", "srcFilter": ["+<*>", "-<native_file.cpp>", "-<native_route_file.cpp>"]},
   "frameworks": "*",
   "platforms": "*"
 }

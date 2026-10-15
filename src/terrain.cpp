@@ -2,6 +2,7 @@
 #include "binary.h"
 #include <algorithm>
 #include <cmath>
+#include <cstring>
 #include <limits>
 
 namespace tmap
@@ -10,10 +11,32 @@ using namespace detail;
 double distanceMeters(GeoPoint a, GeoPoint b) { return distance(a.latitude, a.longitude, b.latitude, b.longitude); }
 Result TerrainReader::initialize()
 {
+    return initializeForZoom(255);
+}
+Result TerrainReader::initializeForZoom(uint8_t zoom)
+{
     initialized_ = false;
     reset(elevation_cursor_);
-    uint8_t r[64]{};
-    auto status = package_.read(SectionType::Terrain, 0, r, sizeof(r));
+    uint8_t r[96]{};
+    index_base_ = data_base_ = 0;
+    lod_selected_ = false;
+    Result status;
+    if (zoom != 255 && zoom > 29) return Result::Invalid;
+    const auto* policy = package_.section(SectionType::TerrainLodPolicy);
+    if (zoom != 255 && policy)
+    {
+        if (policy->count != 30 || policy->bytes != 30 * 96 || package_.pageBytes() != 4096) return Result::Invalid;
+        status = package_.read(SectionType::TerrainLodPolicy, uint64_t(zoom) * 96, r, 96);
+        if (status != Result::Ok) return status;
+        index_base_ = u64(r);
+        data_base_ = u64(r + 8);
+        const auto flags = u32(r + 80);
+        if (flags > 1 || u32(r + 84) || u64(r + 88)) return Result::Invalid;
+        lod_selected_ = flags == 0;
+        if (!lod_selected_ && (index_base_ || data_base_)) return Result::Invalid;
+        std::memmove(r, r + 16, 64);
+    }
+    else status = package_.read(SectionType::Terrain, 0, r, 64);
     if (status != Result::Ok) return status;
     auto& pending = info_;
     pending = {};
@@ -32,12 +55,15 @@ Result TerrainReader::initialize()
         u16(r + 26) != 1 || !pending.resolution_m || u32(r + 36) || u64(r + 40) ||
         int64_t(pending.west) + int64_t(pending.columns - 1) * pending.step_lon > 1800000000 ||
         int64_t(pending.south) + int64_t(pending.rows - 1) * pending.step_lat > 900000000) return Result::Invalid;
-    const auto* index = package_.section(SectionType::DemIndex);
-    const auto* data = package_.section(SectionType::DemData);
+    const auto* index = package_.section(lod_selected_ ? SectionType::TerrainLodIndex : SectionType::DemIndex);
+    const auto* data = package_.section(lod_selected_ ? SectionType::TerrainLodData : SectionType::DemData);
     const uint64_t nx = (uint64_t(pending.columns) + pending.block_side - 1) / pending.block_side;
     const uint64_t ny = (uint64_t(pending.rows) + pending.block_side - 1) / pending.block_side;
-    if (!index || !data || index->count != nx * ny || index->count > index->bytes / 32 || index->bytes != index->count * 32) return Result::Invalid;
-    generation_ = package_.generation();
+    if (!index || !data || index_base_ > index->count || nx * ny > index->count - index_base_ ||
+        (!lod_selected_ && index->count != nx * ny) || index->count > index->bytes / 32 ||
+        index->bytes != index->count * 32 || data_base_ > data->bytes) return Result::Invalid;
+    package_generation_ = package_.generation();
+    ++generation_;
     initialized_ = true;
     return Result::Ok;
 }
@@ -48,7 +74,7 @@ Result TerrainReader::sample(ElevationCursor& c, uint32_t x, uint32_t y, int16_t
         const uint64_t nx = (uint64_t(info_.columns) + info_.block_side - 1) / info_.block_side;
         const auto bx = x / info_.block_side, by = y / info_.block_side;
         uint8_t record[32]{};
-        auto r = package_.record(SectionType::DemIndex, by * nx + bx, 32, record);
+        auto r = package_.record(lod_selected_ ? SectionType::TerrainLodIndex : SectionType::DemIndex, index_base_ + by * nx + bx, 32, record);
         if (r != Result::Ok) return r;
         const auto col = u32(record), row = u32(record + 4);
         const auto w = u16(record + 8), h = u16(record + 10);
@@ -58,13 +84,13 @@ Result TerrainReader::sample(ElevationCursor& c, uint32_t x, uint32_t y, int16_t
             w != std::min<uint32_t>(info_.block_side, info_.columns - col) ||
             h != std::min<uint32_t>(info_.block_side, info_.rows - row) || u32(record + 12) || u32(record + 28) || length != uint32_t(w) * h * 2)
             return Result::Invalid;
-        const auto* data = package_.section(SectionType::DemData);
-        if (!data || !range(offset, length, data->bytes)) return Result::Invalid;
-        c.sample_offset = offset + ((y - row) * w + x - col) * 2;
+        const auto* data = package_.section(lod_selected_ ? SectionType::TerrainLodData : SectionType::DemData);
+        if (!data || data_base_ > data->bytes || !range(offset, length, data->bytes - data_base_)) return Result::Invalid;
+        c.sample_offset = data_base_ + offset + ((y - row) * w + x - col) * 2;
         c.sample_pending = true;
     }
     uint8_t value[2]{};
-    const auto r = package_.read(SectionType::DemData, c.sample_offset, value, 2);
+    const auto r = package_.read(lod_selected_ ? SectionType::TerrainLodData : SectionType::DemData, c.sample_offset, value, 2);
     if (r == Result::Ok)
     {
         output = static_cast<int16_t>(u16(value));
@@ -75,7 +101,7 @@ Result TerrainReader::sample(ElevationCursor& c, uint32_t x, uint32_t y, int16_t
 Result TerrainReader::elevation(GeoPoint point, ElevationSample& output)
 {
     auto& c = elevation_cursor_;
-    if (c.complete || c.point.latitude != point.latitude || c.point.longitude != point.longitude || c.generation != package_.generation())
+    if (c.complete || c.point.latitude != point.latitude || c.point.longitude != point.longitude || c.generation != generation_)
     {
         const auto r = beginElevation(point, c);
         if (r != Result::Ok) return r;
@@ -95,7 +121,7 @@ Result TerrainReader::beginElevation(GeoPoint point, ElevationCursor& c)
         const auto r = initialize();
         if (r != Result::Ok) return r;
     }
-    if (!package_.isOpen() || generation_ != package_.generation()) return Result::Cancelled;
+    if (!package_.isOpen() || package_generation_ != package_.generation()) return Result::Cancelled;
     if (!coordinate(point.latitude, point.longitude)) return Result::Invalid;
     const int64_t x = int64_t(point.longitude) - info_.west, y = int64_t(point.latitude) - info_.south;
     if (x < 0 || y < 0 || x > int64_t(info_.columns - 1) * info_.step_lon || y > int64_t(info_.rows - 1) * info_.step_lat) return Result::Missing;
@@ -113,7 +139,7 @@ Result TerrainReader::elevationStep(ElevationCursor& c, size_t budget, Elevation
 {
     if (!budget) return Result::Invalid;
     if (c.complete && c.terminal != Result::Ok) return c.terminal;
-    if (!initialized_ || !package_.isOpen() || c.generation != generation_ || c.generation != package_.generation())
+    if (!initialized_ || !package_.isOpen() || c.generation != generation_ || package_generation_ != package_.generation())
     {
         cancelElevation(c);
         return c.terminal;

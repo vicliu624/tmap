@@ -101,11 +101,13 @@ Result OutdoorPackage::open(RandomAccessFile& file, size_t section_budget)
         page_bytes_ = u32(h + 20);
         if (Reader::crc32c(h, 256) != expected || u32(h + 12) != 256 || u32(h + 16) != 0x01020304 ||
             (page_bytes_ != 1024 && page_bytes_ != 2048 && page_bytes_ != 4096) ||
-            u64(h + 24) || u64(h + 32) != file.size() || u64(h + 40) != page_bytes_ || u32(h + 52) != 64) return fail(Result::Invalid);
+            (u64(h + 24) != 0 && u64(h + 24) != 8) || u64(h + 32) != file.size() || u64(h + 40) != page_bytes_ || u32(h + 52) != 64) return fail(Result::Invalid);
         const auto count = u32(h + 48), directory_crc = u32(h + 164), required = u32(h + 140);
-        if (!count || count > 64) return fail(Result::Invalid);
-        if (count > PackageWorkspace::kSections || page_bytes_ > PackageWorkspace::kPageBytes) return fail(Result::BudgetExceeded);
-        if (required & ~15U) return fail(Result::Unsupported);
+        const bool unified = u64(h + 24) == 8;
+        if (!count || count > (unified ? 128U : 64U)) return fail(Result::Invalid);
+        if ((!unified && count > PackageWorkspace::kSections) || page_bytes_ > PackageWorkspace::kPageBytes) return fail(Result::BudgetExceeded);
+        if (required & ~(unified ? 31U : 15U)) return fail(Result::Unsupported);
+        if (unified && (!(required & Display) || page_bytes_ != 4096 || u32(h + 168) != 1 || u32(h + 172) != 2)) return fail(Result::Invalid);
         auto& pending = info_;
         std::memcpy(pending.id.data(), h + 56, 16);
         std::memcpy(pending.build.data(), h + 72, 16);
@@ -134,24 +136,38 @@ Result OutdoorPackage::open(RandomAccessFile& file, size_t section_budget)
             opening_chunk_rows_ = rows;
             opening_chunk_next_ = 0;
         }
-        const auto i = opening_next_;
         const auto* d = scratch.data() + opening_chunk_next_ * 64;
-        auto& s = workspace_.sections[i];
+        if ((required & Display) && u32(d) < 1000)
+        {
+            // Display keeps its native v1 section/page encoding. It is read and
+            // validated by Reader without consuming outdoor directory slots.
+            const auto offset = u64(d + 16), length = u64(d + 24);
+            if (!u32(d) || u16(d + 4) != 1 || (u16(d + 6) & ~3U) || offset % page_bytes_ ||
+                offset < opening_previous_end_ || !range(offset, length, file.size()) ||
+                ((u16(d + 6) & 2U) && length % page_bytes_)) return fail(Result::Invalid);
+            opening_previous_end_ = offset + length;
+            ++opening_next_;
+            if (++opening_chunk_next_ == opening_chunk_rows_) opening_chunk_rows_ = 0;
+            continue;
+        }
+        if (sections_ == PackageWorkspace::kSections) return fail(Result::BudgetExceeded);
+        auto& s = workspace_.sections[sections_];
         s = {static_cast<SectionType>(u32(d)), u64(d + 16), u64(d + 24), u64(d + 48), u64(d + 32)};
         const auto flags = u16(d + 6);
         if (!u32(d) || u16(d + 4) != 1 || flags != 2 || u32(d + 8) != u32(d) || u32(d + 12) || u64(d + 40) || u64(d + 56) ||
             s.offset % page_bytes_ || s.offset < opening_previous_end_ || s.length % page_bytes_ || !range(s.offset, s.length, file.size()) ||
             s.bytes > std::numeric_limits<uint64_t>::max() - (payloadBytes() - 1) ||
             (s.bytes + payloadBytes() - 1) / payloadBytes() != s.length / page_bytes_) return fail(Result::Invalid);
-        for (uint32_t j = 0; j < i; ++j)
+        for (size_t j = 0; j < sections_; ++j)
             if (workspace_.sections[j].type == s.type) return fail(Result::Invalid);
         opening_previous_end_ = s.offset + s.length;
+        ++sections_;
         ++opening_next_;
         if (++opening_chunk_next_ == opening_chunk_rows_) opening_chunk_rows_ = 0;
     }
     if (opening_next_ != count) return Result::More;
-    if (opening_previous_end_ != file.size() || ~opening_running_crc_ != opening_crc_) return fail(Result::Invalid);
-    sections_ = count;
+    if (((required & Display) ? ((opening_previous_end_ + page_bytes_ - 1) / page_bytes_) * page_bytes_ : opening_previous_end_) != file.size() ||
+        ~opening_running_crc_ != opening_crc_) return fail(Result::Invalid);
     file_ = &file;
     opening_file_ = nullptr;
     header_loaded_ = false;
