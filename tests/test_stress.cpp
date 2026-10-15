@@ -193,7 +193,8 @@ int main(int argc, char** argv)
     const auto baseline_bytes_begin = file.bytes;
     CHECK(route(accelerated, cursor, 0, 63, workspace, {TravelMode::Foot, 0, 10000, RouteAlgorithm::Dijkstra}) == Result::Ok);
     const auto baseline_cost = cursor.workspace.labels[cursor.goal_label].cost;
-    const auto baseline_expansions = cursor.expansions, baseline_states = cursor.labels_used;
+    const auto baseline_expansions = cursor.expansions;
+    const auto baseline_states = cursor.labels_used;
     const auto baseline_reads = file.calls - baseline_reads_begin;
     const auto baseline_bytes = file.bytes - baseline_bytes_begin;
     package.close();

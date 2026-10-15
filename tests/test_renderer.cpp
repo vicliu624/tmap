@@ -100,7 +100,8 @@ int main(int argc, char** argv)
         CHECK(++steps < 100000);
     } while (retry(r));
     CHECK(r == Result::Ok && cursor->count <= 64 && cursor->density_retries > 0 && cursor->interval_m > 10);
-    const auto count = cursor->count, operations = cursor->operations;
+    const auto count = cursor->count;
+    const size_t operations = cursor->operations;
     CHECK(beginContourRender(package, {{0, 0}, 16, 320, 240}, segments.get(), 1, {1000, 0}, *cursor) == Result::Ok);
     do
     {
