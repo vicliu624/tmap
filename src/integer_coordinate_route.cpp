@@ -3,6 +3,19 @@
 #include <new>
 namespace tmap
 {
+namespace
+{
+// Isolate the by-value option/workspace call frame from the phase dispatcher.
+// Clang x86-64 otherwise combines outgoing arguments with the snap/endpoint
+// phase spills, exceeding the host stack gate even though phases are exclusive.
+#if defined(__GNUC__) || defined(__clang__)
+__attribute__((noinline))
+#endif
+Result beginPreparedPhase(GraphReader& graph, IntegerCoordinateRouteCursor& c)
+{
+    return beginIntegerPreparedRoute(graph, c.starts, c.ends, c.options, c.workspace, c.legs, c.capacity, c.scratch.searching);
+}
+} // namespace
 Result beginIntegerCoordinateRoute(GraphReader& graph, GeoPoint start, GeoPoint destination, IntegerRouteOptions options,
                                    double radius, IntegerRouteWorkspace workspace, IntegerRouteLeg* legs, size_t capacity,
                                    IntegerCoordinateRouteCursor& c)
@@ -91,7 +104,7 @@ Result integerCoordinateRouteStep(GraphReader& graph, IntegerCoordinateRouteCurs
         }
         else if (c.stage == 4)
         {
-            r = beginIntegerPreparedRoute(graph, c.starts, c.ends, c.options, c.workspace, c.legs, c.capacity, c.scratch.searching);
+            r = beginPreparedPhase(graph, c);
             if (r == Result::Ok) c.stage = 5;
         }
         else
